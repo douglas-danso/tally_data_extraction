@@ -20,20 +20,13 @@ Guidelines:
 - Keep a professional yet warm tone throughout"""
 
 
-def _get_media_type(filename: str) -> str:
-    """Derive image MIME type from filename extension."""
-    if filename.lower().endswith(".png"):
-        return "image/png"
-    return "image/jpeg"  # covers .jpg and .jpeg
-
-
 async def generate_supporting_info(
     name: str,
     role: str,
     trust: str,
     cv_url: str,
     person_spec_url: str,
-    person_spec_filename: str,
+    person_spec_mimetype: str,
 ) -> str:
     """Download CV + Person Spec, feed both to Claude, return the statement."""
     client = Anthropic(api_key=ANTHROPIC_API_KEY)
@@ -51,7 +44,7 @@ async def generate_supporting_info(
 
     # Encode Person Spec image for Claude vision
     ps_base64 = base64.standard_b64encode(ps_bytes).decode("utf-8")
-    media_type = _get_media_type(person_spec_filename)
+    media_type = person_spec_mimetype
 
     user_prompt = (
         f"Please generate a Supporting Information statement for the following application:\n\n"

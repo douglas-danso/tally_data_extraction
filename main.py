@@ -50,7 +50,7 @@ async def tally_webhook(payload: TallyWebhookPayload):
             trust=form_data.trust,
             cv_url=form_data.cv_url,
             person_spec_url=form_data.person_spec_url,
-            person_spec_filename=form_data.person_spec_filename,
+            person_spec_mimetype=form_data.person_spec_mimetype,
         )
     except Exception as e:
         logger.error("Claude generation failed: %s", e)

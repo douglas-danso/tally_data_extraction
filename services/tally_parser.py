@@ -4,12 +4,16 @@ from models import ParsedFormData, TallyWebhookPayload
 def extract_fields(payload: TallyWebhookPayload) -> ParsedFormData:
     """Map Tally webhook fields to structured form data by label matching.
 
-    Tally sends file fields as: [{"name": "filename.ext", "url": "https://..."}]
-    Checkbox fields arrive as a boolean value.
+    Tally sends FILE_UPLOAD fields as: [{"name": "...", "url": "...", "mimeType": "...", ...}]
+    CHECKBOXES fields arrive as either an array of selected option IDs or a boolean.
+    Fields with a null label (e.g. the raw checkbox group) are skipped.
     """
     data: dict = {}
 
     for field in payload.data.fields:
+        if field.label is None:
+            continue
+
         label = field.label.strip().lower()
 
         if "full name" in label:
@@ -24,7 +28,7 @@ def extract_fields(payload: TallyWebhookPayload) -> ParsedFormData:
         elif "person specification" in label:
             file_entry = field.value[0]
             data["person_spec_url"] = file_entry["url"]
-            data["person_spec_filename"] = file_entry["name"]
+            data["person_spec_mimetype"] = file_entry["mimeType"]
 
         elif "cv" in label:
             file_entry = field.value[0]

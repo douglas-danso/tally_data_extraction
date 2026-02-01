@@ -1,16 +1,20 @@
 from typing import Any
 
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 
 
 class TallyField(BaseModel):
-    id: str
-    label: str
+    model_config = ConfigDict(extra="ignore")
+
+    key: str
+    label: str | None
     type: str
-    value: Any  # str | bool | list[{name, url}] depending on field type
+    value: Any
 
 
 class TallyFormData(BaseModel):
+    model_config = ConfigDict(extra="ignore")
+
     formId: str
     formName: str
     createdAt: str
@@ -18,17 +22,18 @@ class TallyFormData(BaseModel):
 
 
 class TallyWebhookPayload(BaseModel):
+    model_config = ConfigDict(extra="ignore")
+
     data: TallyFormData
-    eventType: str
 
 
 class ParsedFormData(BaseModel):
     name: str
     role: str
-    trust: str
+    trust: str = "Not specified"
     email: str
     consent: bool
     cv_url: str
     cv_filename: str
     person_spec_url: str
-    person_spec_filename: str
+    person_spec_mimetype: str
