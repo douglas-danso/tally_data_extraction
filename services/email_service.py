@@ -1,27 +1,16 @@
 import markdown as md
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
 
-import aiosmtplib
+import httpx
 
-from config import SMTP_HOST, SMTP_PASSWORD, SMTP_PORT, SMTP_USER
+from config import BREVO_API_KEY, BREVO_FROM_EMAIL
 
 
 async def send_email(recipient: str, subject: str, body: str) -> None:
-    """Send the Supporting Information to the applicant as a formatted HTML email.
+    """Send the Supporting Information via the Brevo API.
 
-    The body is expected in Markdown. It is converted to HTML for the primary
-    part; a plain-text copy is attached as fallback.
+    The body is expected in Markdown. It is converted to styled HTML for
+    delivery; a plain-text copy is included as fallback.
     """
-    msg = MIMEMultipart("alternative")
-    msg["Subject"] = subject
-    msg["From"] = SMTP_USER
-    msg["To"] = recipient
-
-    # Plain-text fallback
-    msg.attach(MIMEText(body, "plain"))
-
-    # HTML — convert markdown and wrap in minimal styled shell
     html_content = md.markdown(body, extensions=["nl2br"])
     html_body = (
         "<html><head><style>"
@@ -32,13 +21,18 @@ async def send_email(recipient: str, subject: str, body: str) -> None:
         "</style></head>"
         f"<body>{html_content}</body></html>"
     )
-    msg.attach(MIMEText(html_body, "html"))
 
-    await aiosmtplib.send(
-        msg,
-        hostname=SMTP_HOST,
-        port=SMTP_PORT,
-        username=SMTP_USER,
-        password=SMTP_PASSWORD,
-        start_tls=True,
-    )
+    async with httpx.AsyncClient() as client:
+        response = await client.post(
+            "https://api.brevo.com/v3/smtp/email",
+            headers={"api-key": BREVO_API_KEY},
+            json={
+                "sender": {"email": BREVO_FROM_EMAIL},
+                "to": [{"email": recipient}],
+                "subject": subject,
+                "htmlContent": html_body,
+                "textContent": body,
+            },
+            timeout=30.0,
+        )
+        response.raise_for_status()

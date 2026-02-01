@@ -1,8 +1,8 @@
 import logging
 
-from fastapi import FastAPI, HTTPException
+from fastapi import BackgroundTasks, FastAPI, HTTPException
 
-from models import TallyWebhookPayload
+from models import ParsedFormData, TallyWebhookPayload
 from services.claude_service import generate_supporting_info
 from services.email_service import send_email
 from services.tally_parser import extract_fields
@@ -22,27 +22,37 @@ async def health():
 
 
 @app.post("/webhook")
-async def tally_webhook(payload: TallyWebhookPayload):
-    print(payload)
-    """Receive and process a Tally form submission."""
+async def tally_webhook(payload: TallyWebhookPayload, background_tasks: BackgroundTasks):
+    """Receive a Tally submission, validate it, then kick off processing in the background.
+
+    Returns 200 immediately so Render's free-tier request timeout doesn't kill
+    the connection while Claude is still generating the statement.
+    """
     logger.info("Received submission for form: %s", payload.data.formName)
 
-    # 1. Parse the Tally payload into structured fields
+    # Parse and validate synchronously — fast, no external calls
     try:
         form_data = extract_fields(payload)
     except (KeyError, ValueError, IndexError) as e:
         logger.error("Failed to parse form data: %s", e)
         raise HTTPException(status_code=422, detail=f"Could not parse form fields: {e}")
 
-    logger.info("Processing submission for: %s (%s)", form_data.name, form_data.email)
+    logger.info("Submission received for: %s (%s)", form_data.name, form_data.email)
 
-    # 2. Consent gate — reject if not checked
     if not form_data.consent:
         logger.warning("Submission rejected — no consent: %s", form_data.email)
         raise HTTPException(status_code=400, detail="Consent was not provided.")
 
-    # 3. Download CV + Person Spec, call Claude, get the statement
-    logger.info("Generating Supporting Information via Claude...")
+    # Heavy work (downloads + Claude + email) runs after this response is sent
+    background_tasks.add_task(process_submission, form_data)
+
+    return {"status": "accepted", "message": "Submission received. Processing in background."}
+
+
+async def process_submission(form_data: ParsedFormData):
+    """Download files, call Claude, email the result. Runs as a background task."""
+    logger.info("Background: generating Supporting Information for %s...", form_data.name)
+
     try:
         supporting_info = await generate_supporting_info(
             name=form_data.name,
@@ -53,15 +63,11 @@ async def tally_webhook(payload: TallyWebhookPayload):
             person_spec_mimetype=form_data.person_spec_mimetype,
         )
     except Exception as e:
-        logger.error("Claude generation failed: %s", e)
-        raise HTTPException(
-            status_code=500,
-            detail=f"Failed to generate Supporting Information: {e}",
-        )
+        logger.error("Background: Claude generation failed for %s: %s", form_data.email, e)
+        return
 
-    logger.info("Supporting Information generated successfully.")
+    logger.info("Background: Supporting Information generated for %s.", form_data.name)
 
-    # 4. Email the result to the applicant
     subject = f"Your Supporting Information — {form_data.role} at {form_data.trust}"
     email_body = (
         f"Dear {form_data.name},\n\n"
@@ -77,19 +83,12 @@ async def tally_webhook(payload: TallyWebhookPayload):
         f"The NHS Supporting Information Generator"
     )
 
-    logger.info("Sending email to %s...", form_data.email)
     try:
         await send_email(
             recipient=form_data.email,
             subject=subject,
             body=email_body,
         )
+        logger.info("Background: email sent successfully to %s.", form_data.email)
     except Exception as e:
-        logger.error("Email sending failed: %s", e)
-        raise HTTPException(
-            status_code=500,
-            detail=f"Supporting Information was generated but email delivery failed: {e}",
-        )
-
-    logger.info("Email sent successfully to %s", form_data.email)
-    return {"status": "success", "message": "Supporting Information generated and sent."}
+        logger.error("Background: email failed for %s: %s", form_data.email, e)
