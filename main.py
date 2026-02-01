@@ -23,6 +23,7 @@ async def health():
 
 @app.post("/webhook")
 async def tally_webhook(payload: TallyWebhookPayload):
+    print(payload)
     """Receive and process a Tally form submission."""
     logger.info("Received submission for form: %s", payload.data.formName)
 
