@@ -1,0 +1,82 @@
+{
+  "Wirral University Teaching Hospital NHS Foundation Trust": {
+    "values": ["Respect", "Compassion", "Teamwork", "Equality", "Safety"],
+    "description": "Treat people with dignity, work together, provide safe and inclusive care."
+  },
+  "Barts Health NHS Trust": {
+    "values": ["Respect", "Inclusion", "Excellence", "Safety"],
+    "description": "Put patients first, work inclusively, aim for high standards."
+  },
+  "Guy's and St Thomas' NHS Foundation Trust": {
+    "values": ["Care", "Collaboration", "Innovation", "Respect"],
+    "description": "Deliver caring, modern healthcare through teamwork."
+  },
+  "Manchester University NHS Foundation Trust": {
+    "values": ["Compassion", "Excellence", "Respect", "Teamwork"],
+    "description": "High-quality care delivered with kindness."
+  },
+  "Leeds Teaching Hospitals NHS Trust": {
+    "values": ["Patient-Centred", "Safe", "Professional", "Respectful"],
+    "description": "Focus on safety and patient experience."
+  },
+  "Birmingham Women's and Children's NHS Foundation Trust": {
+    "values": ["Kindness", "Respect", "Excellence", "Inclusion"],
+    "description": "Support families with compassionate care."
+  },
+  "Imperial College Healthcare NHS Trust": {
+    "values": ["Respect", "Collaboration", "Innovation", "Quality"],
+    "description": "Combine research and care safely."
+  },
+  "King's College Hospital NHS Foundation Trust": {
+    "values": ["Care", "Respect", "Teamwork", "Improvement"],
+    "description": "Strong focus on patient safety and teamwork."
+  },
+  "Nottingham University Hospitals NHS Trust": {
+    "values": ["Kindness", "Trust", "Excellence", "Teamwork"],
+    "description": "Deliver care with integrity and quality."
+  },
+  "Oxford University Hospitals NHS Foundation Trust": {
+    "values": ["Compassion", "Respect", "Excellence", "Learning"],
+    "description": "Support patients with skilled care."
+  },
+  "University College London Hospitals NHS Foundation Trust": {
+    "values": ["Safety", "Respect", "Excellence", "Teamwork"],
+    "description": "High standards of care through collaboration."
+  },
+  "Royal Free London NHS Foundation Trust": {
+    "values": ["Compassion", "Respect", "Safety", "Improvement"],
+    "description": "Patient-focused, safe healthcare."
+  },
+  "East Kent Hospitals University NHS Foundation Trust": {
+    "values": ["Kindness", "Respect", "Teamwork", "Quality"],
+    "description": "Delivering care with dignity."
+  },
+  "Sheffield Teaching Hospitals NHS Foundation Trust": {
+    "values": ["Patient First", "Safe", "Caring", "Professional"],
+    "description": "Putting patients at the centre."
+  },
+  "Liverpool University Hospitals NHS Foundation Trust": {
+    "values": ["Respect", "Kindness", "Teamwork", "Quality"],
+    "description": "Caring, safe, inclusive healthcare."
+  },
+  "North West Anglia NHS Foundation Trust": {
+    "values": ["Compassion", "Respect", "Teamwork", "Excellence"],
+    "description": "Supporting patients with dignity."
+  },
+  "Brighton and Sussex University Hospitals NHS Trust": {
+    "values": ["Kindness", "Respect", "Safety", "Improvement"],
+    "description": "Safe, caring, and improving services."
+  },
+  "Mid and South Essex NHS Foundation Trust": {
+    "values": ["Compassion", "Respect", "Quality", "Teamwork"],
+    "description": "Focused on patient-centred care."
+  },
+  "Frimley Health NHS Foundation Trust": {
+    "values": ["Committed to Excellence", "Working Together", "Facing the Future"],
+    "description": "High-quality care through teamwork."
+  },
+  "University Hospitals Birmingham NHS Foundation Trust": {
+    "values": ["Compassion", "Respect", "Excellence", "Safety"],
+    "description": "Delivering safe and caring services."
+  }
+}
