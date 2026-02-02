@@ -97,11 +97,26 @@ STYLE REQUIREMENTS:
 
 ---
 
-FINAL OUTPUT:
+FINAL OUTPUT PROCESS:
 
-Produce a complete NHS Supporting Statement that:
+STEP 1: Generate the Supporting Statement following all the requirements above.
 
-- STAYS UNDER 1,500 WORDS (this is mandatory)
+STEP 2: COUNT THE WORDS in your generated statement.
+
+STEP 3: IF THE WORD COUNT EXCEEDS 1,500 WORDS:
+   - You MUST trim the statement down to under 1,500 words
+   - Remove redundant phrases and make sentences more concise
+   - Shorten examples while keeping the key evidence
+   - Reduce repetition
+   - Prioritize Essential criteria over Desirable criteria
+   - Make the "What Sets Me Apart" and Trust Values sections more compact
+   - DO NOT remove any criterion headings - just make the content under each one more concise
+
+STEP 4: Verify the final word count is under 1,500 words before outputting.
+
+FINAL STATEMENT REQUIREMENTS:
+
+- MUST be under 1,500 words (if over, trim it down)
 - Covers every criterion independently
 - Uses only CV evidence
 - Embeds real examples under Essential criteria
@@ -109,7 +124,7 @@ Produce a complete NHS Supporting Statement that:
 - Aligns clearly with Trust Values
 - Reads naturally as if written by the applicant
 
-REMEMBER: Check your word count. If approaching 1,500 words, make your writing more concise."""
+⚠️ CRITICAL: After generating, COUNT YOUR WORDS. If over 1,500, EDIT IT DOWN. Do not output anything over 1,500 words. ⚠️"""
 
 
 def load_trust_values() -> dict:
@@ -185,8 +200,13 @@ async def generate_supporting_info(
         f"Analyse all documents (CV, Person Specification, and Trust Values) and produce the Supporting Information statement, "
         f"addressing each criterion from the Person Specification with evidence from the CV, "
         f"and aligning with the Trust Values provided.\n\n"
-        f"⚠️ REMINDER: Keep the total word count UNDER 1,500 WORDS. Be concise and focused. "
-        f"If you find yourself approaching the limit, prioritize essential criteria and make your writing more compact. ⚠️"
+        f"⚠️ CRITICAL INSTRUCTIONS: ⚠️\n"
+        f"1. Write the complete statement\n"
+        f"2. COUNT THE TOTAL WORDS after generation\n"
+        f"3. IF OVER 1,500 WORDS: You MUST trim it down by making it more concise\n"
+        f"4. Do NOT output the statement until it is under 1,500 words\n\n"
+        f"The final output MUST be under 1,500 words. If you generate something over 1,500 words, "
+        f"edit it down before providing your response."
     )
 
     message = client.messages.create(
