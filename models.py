@@ -10,6 +10,7 @@ class TallyField(BaseModel):
     label: str | None
     type: str
     value: Any
+    options: list[dict[str, Any]] | None = None
 
 
 class TallyFormData(BaseModel):
