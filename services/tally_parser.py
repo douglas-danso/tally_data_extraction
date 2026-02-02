@@ -23,7 +23,13 @@ def extract_fields(payload: TallyWebhookPayload) -> ParsedFormData:
             data["role"] = field.value
 
         elif "nhs trust" in label:
-            data["trust"] = field.value
+            # Dropdown returns list of IDs; map to text from options
+            selected_id = field.value[0] if isinstance(field.value, list) else field.value
+            trust_text = next(
+                (opt["text"] for opt in (field.options or []) if opt["id"] == selected_id),
+                selected_id,
+            )
+            data["trust"] = trust_text
 
         elif "person specification" in label:
             file_entry = field.value[0]
