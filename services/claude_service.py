@@ -59,6 +59,7 @@ CRITICAL RULES:
 
 7. Align with Trust Values using real behaviours or experience from the CV. Keep this section CONCISE.
 
+8. Use British English spelling and NHS terminology.
 ---
 
 REQUIRED FORMAT (must follow exactly):
@@ -77,7 +78,7 @@ REQUIRED FORMAT (must follow exactly):
 
 4. What Sets Me Apart (keep brief - 75-100 words)
 
-5. Conclusion (keep brief - 50-75 words)
+5. Conclusion
 
 REMEMBER: The total word count across ALL sections must not exceed 1,500 words.
 
