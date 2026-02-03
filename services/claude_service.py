@@ -112,11 +112,19 @@ STEP 3: IF THE WORD COUNT EXCEEDS 1,500 WORDS:
    - Make the "What Sets Me Apart" and Trust Values sections more compact
    - DO NOT remove any criterion headings - just make the content under each one more concise
 
-STEP 4: Verify the final word count is under 1,500 words before outputting.
+STEP 4: Output the final statement with word count.
+
+OUTPUT FORMAT:
+
+FINAL WORD COUNT: [X] WORDS
+
+[The complete Supporting Information statement]
+
+⚠️ CRITICAL: You MUST provide the COMPLETE final statement after the word count. Do NOT just say "I need to reduce this" - actually provide the full trimmed statement that is under 1,500 words. ⚠️
 
 FINAL STATEMENT REQUIREMENTS:
 
-- MUST be under 1,500 words (if over, trim it down)
+- MUST be under 1,500 words (if you generated over 1,500, trim it down BEFORE outputting)
 - Covers every criterion independently
 - Uses only CV evidence
 - Embeds real examples under Essential criteria
@@ -124,7 +132,7 @@ FINAL STATEMENT REQUIREMENTS:
 - Aligns clearly with Trust Values
 - Reads naturally as if written by the applicant
 
-⚠️ CRITICAL: After generating, COUNT YOUR WORDS. If over 1,500, EDIT IT DOWN. Do not output anything over 1,500 words. ⚠️"""
+⚠️ CRITICAL: After the "FINAL WORD COUNT: X WORDS" line, you MUST output the complete statement. Never stop after just saying it needs to be reduced. ⚠️"""
 
 
 def load_trust_values() -> dict:
@@ -177,6 +185,14 @@ async def generate_supporting_info(
     # Extract CV text from PDF
     cv_text = extract_text_from_pdf_bytes(cv_bytes)
 
+    # Check if CV extraction was successful
+    if not cv_text or len(cv_text.strip()) < 50:
+        raise ValueError(
+            "CV text extraction failed or CV appears to be empty. "
+            "Please ensure the CV is a text-based PDF (not a scanned image). "
+            "If the CV is a scanned document, please convert it to a text-based PDF first."
+        )
+
     # Encode Person Spec image for Claude vision
     ps_base64 = base64.standard_b64encode(ps_bytes).decode("utf-8")
     media_type = person_spec_mimetype
@@ -200,13 +216,17 @@ async def generate_supporting_info(
         f"Analyse all documents (CV, Person Specification, and Trust Values) and produce the Supporting Information statement, "
         f"addressing each criterion from the Person Specification with evidence from the CV, "
         f"and aligning with the Trust Values provided.\n\n"
-        f"⚠️ CRITICAL INSTRUCTIONS: ⚠️\n"
-        f"1. Write the complete statement\n"
-        f"2. COUNT THE TOTAL WORDS after generation\n"
-        f"3. IF OVER 1,500 WORDS: You MUST trim it down by making it more concise\n"
-        f"4. Do NOT output the statement until it is under 1,500 words\n\n"
-        f"The final output MUST be under 1,500 words. If you generate something over 1,500 words, "
-        f"edit it down before providing your response."
+        f"⚠️ CRITICAL OUTPUT INSTRUCTIONS: ⚠️\n"
+        f"1. Generate the statement following all requirements in the system prompt\n"
+        f"2. Count the total words\n"
+        f"3. If over 1,500 words, trim it down internally\n"
+        f"4. Output format:\n"
+        f"   FINAL WORD COUNT: [X] WORDS\n"
+        f"   \n"
+        f"   [The COMPLETE Supporting Information statement]\n\n"
+        f"⚠️ You MUST provide the COMPLETE final statement after the word count line. "
+        f"Do NOT stop after just showing the word count or saying you need to reduce it. "
+        f"Provide the full trimmed statement that is ready to use. ⚠️"
     )
 
     message = client.messages.create(
