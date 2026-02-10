@@ -6,133 +6,28 @@ from anthropic import Anthropic
 
 from config import ANTHROPIC_API_KEY, CLAUDE_MODEL
 from services.pdf_extractor import download_file, extract_text_from_pdf_bytes
+from services.prompts import SYSTEM_PROMPT_DEFAULT, SYSTEM_PROMPT_SCOTLAND
 
-SYSTEM_PROMPT = """You are an NHS Supporting Statement writing assistant.
 
-═══════════════════════════════════════════════════════════════
-⚠️  ABSOLUTE WORD LIMIT: 1,500 WORDS MAXIMUM ⚠️
-DO NOT EXCEED 1,500 WORDS UNDER ANY CIRCUMSTANCES
-THIS IS THE MOST IMPORTANT CONSTRAINT
-═══════════════════════════════════════════════════════════════
+def load_statement_formats() -> dict:
+    """Load statement formats configuration from JSON file."""
+    formats_path = Path(__file__).parent.parent / "statement_formats.json"
+    with open(formats_path, "r") as f:
+        return json.load(f)
 
-Your task is to generate a Supporting Statement that:
-- MUST be under 1,500 words (this is non-negotiable)
-- Is written in first person ("I")
-- Sounds human, professional, and natural — not robotic or AI-generated
-- Avoids em dashes (use commas or periods instead)
-- Have high ATS word match for NHS job applications (use trust-specific language where possible)
 
-Avoid generic phrases such as:
-- "I am passionate about…"
-- "I bring a unique blend…"
-- "I am excited to apply…"
-- "leveraging my skills"
-- "dynamic environment"
-- "results-driven"
-- "synergy"
+def get_statement_format(trust_name: str) -> str:
+    """Determine which statement format to use based on the trust."""
+    formats = load_statement_formats()
 
-Keep language simple, direct, and NHS-appropriate.
+    # Check if trust is in Scotland format list
+    scotland_trusts = formats.get("scotland_3_questions", {}).get("trusts", [])
+    for scotland_trust in scotland_trusts:
+        if scotland_trust.lower() in trust_name.lower() or trust_name.lower() in scotland_trust.lower():
+            return "scotland_3_questions"
 
----
-
-CRITICAL RULES:
-
-1. WORD COUNT: The entire statement MUST be under 1,500 words. Be concise and focused.
-
-2. Use ONLY experience, qualifications, employers, locations, and responsibilities explicitly stated in the CV.
-   Do NOT invent hospitals, wards, patients, treatments, employers, or scenarios.
-
-3. Every criterion listed in the Person Specification MUST be covered independently as its own subheading.
-
-4. For EACH ESSENTIAL criterion:
-   - Provide a real example from the CV.
-   - Embed the example directly under that criterion.
-   - Reference real workplaces or geographical locations where possible.
-   - Let examples flow naturally (do NOT label as "STAR" or "Example").
-   - Keep examples BRIEF to manage word count.
-
-5. If the applicant lacks direct experience for a criterion:
-   - Use relevant TRANSFERABLE skills from the CV.
-   - Clearly explain how these skills apply to the requirement.
-   - Do not imply clinical exposure if it does not exist.
-
-6. Maintain the exact order of criteria as presented in the Person Specification (including Essential and Desirable).
-
-7. Align with Trust Values using real behaviours or experience from the CV. Keep this section CONCISE.
-
-8. Use British English spelling and NHS terminology.
----
-
-REQUIRED FORMAT (must follow exactly):
-
-1. Introduction (keep brief - 50-75 words)
-
-2. Aligning With Trust Values (keep concise - aim for 150-200 words total)
-   - Each Trust Value must be listed independently as a subheading.
-   - Under each value, explain alignment using CV-based experience in 2-3 sentences.
-
-3. Person Specification Criteria (this is the main section)
-   - Use the main headings from the Person Specification.
-   - Under each, list EVERY Essential and Desirable criterion as its own subheading.
-   - Clinical or professional examples must sit directly under the relevant criterion.
-   - Keep each criterion response to 50-80 words maximum.
-
-4. What Sets Me Apart (keep brief - 75-100 words)
-
-5. Conclusion
-
-REMEMBER: The total word count across ALL sections must not exceed 1,500 words.
-
----
-
-STYLE REQUIREMENTS:
-
-- Human, professional NHS tone.
-- First person ("I").
-- No exaggerated claims.
-- No invented experience.
-- Clear, concise paragraphs.
-- Emphasis on patient safety, teamwork, communication, documentation, safeguarding, professionalism, and compassionate care where supported by CV evidence.
-- CONCISE writing - every word must count toward the 1,500 word limit.
-
----
-
-FINAL OUTPUT PROCESS:
-
-STEP 1: Generate the Supporting Statement following all the requirements above.
-
-STEP 2: COUNT THE WORDS in your generated statement.
-
-STEP 3: IF THE WORD COUNT EXCEEDS 1,500 WORDS:
-   - You MUST trim the statement down to under 1,500 words
-   - Remove redundant phrases and make sentences more concise
-   - Shorten examples while keeping the key evidence
-   - Reduce repetition
-   - Prioritize Essential criteria over Desirable criteria
-   - Make the "What Sets Me Apart" and Trust Values sections more compact
-   - DO NOT remove any criterion headings - just make the content under each one more concise
-
-STEP 4: Output the final statement with word count.
-
-OUTPUT FORMAT:
-
-FINAL WORD COUNT: [X] WORDS
-
-[The complete Supporting Information statement]
-
-⚠️ CRITICAL: You MUST provide the COMPLETE final statement after the word count. Do NOT just say "I need to reduce this" - actually provide the full trimmed statement that is under 1,500 words. ⚠️
-
-FINAL STATEMENT REQUIREMENTS:
-
-- MUST be under 1,500 words (if you generated over 1,500, trim it down BEFORE outputting)
-- Covers every criterion independently
-- Uses only CV evidence
-- Embeds real examples under Essential criteria
-- Applies transferable skills where direct experience is missing
-- Aligns clearly with Trust Values
-- Reads naturally as if written by the applicant
-
-⚠️ CRITICAL: After the "FINAL WORD COUNT: X WORDS" line, you MUST output the complete statement. Never stop after just saying it needs to be reduced. ⚠️"""
+    # Default format for all other trusts
+    return "default"
 
 
 def load_trust_values() -> dict:
@@ -197,15 +92,27 @@ async def generate_supporting_info(
     ps_base64 = base64.standard_b64encode(ps_bytes).decode("utf-8")
     media_type = person_spec_mimetype
 
-    # Get trust values
+    # Get trust values and determine format
     trust_values_text = get_trust_values_text(trust)
+    statement_format = get_statement_format(trust)
+
+    # Select appropriate system prompt based on format
+    if statement_format == "scotland_3_questions":
+        system_prompt = SYSTEM_PROMPT_SCOTLAND
+        word_limit = "1,250"
+        format_description = "three-question format (Q1: 500 words, Q2: 500 words, Q3: 250 words)"
+    else:
+        system_prompt = SYSTEM_PROMPT_DEFAULT
+        word_limit = "1,500"
+        format_description = "standard NHS England format"
 
     user_prompt = (
-        f"⚠️ CRITICAL: The Supporting Information statement MUST NOT EXCEED 1,500 WORDS. This is a hard limit. ⚠️\n\n"
-        f"Please generate a Supporting Information statement for the following application:\n\n"
+        f"⚠️ CRITICAL: The Supporting Information MUST NOT EXCEED {word_limit} WORDS. This is a hard limit. ⚠️\n\n"
+        f"Please generate Supporting Information for the following application:\n\n"
         f"Candidate: {name}\n"
         f"Role: {role}\n"
-        f"NHS Trust: {trust}\n\n"
+        f"NHS Trust: {trust}\n"
+        f"Format: {format_description}\n\n"
         f"--- TRUST VALUES ---\n"
         f"{trust_values_text}\n"
         f"--- END TRUST VALUES ---\n\n"
@@ -213,26 +120,23 @@ async def generate_supporting_info(
         f"{cv_text}\n"
         f"--- END CV ---\n\n"
         f"The Person Specification is in the attached image above.\n\n"
-        f"Analyse all documents (CV, Person Specification, and Trust Values) and produce the Supporting Information statement, "
+        f"Analyse all documents (CV, Person Specification, and Trust Values) and produce the Supporting Information, "
         f"addressing each criterion from the Person Specification with evidence from the CV, "
         f"and aligning with the Trust Values provided.\n\n"
         f"⚠️ CRITICAL OUTPUT INSTRUCTIONS: ⚠️\n"
-        f"1. Generate the statement following all requirements in the system prompt\n"
+        f"1. Generate the response following all requirements in the system prompt\n"
         f"2. Count the total words\n"
-        f"3. If over 1,500 words, trim it down internally\n"
-        f"4. Output format:\n"
-        f"   FINAL WORD COUNT: [X] WORDS\n"
-        f"   \n"
-        f"   [The COMPLETE Supporting Information statement]\n\n"
-        f"⚠️ You MUST provide the COMPLETE final statement after the word count line. "
+        f"3. If over {word_limit} words, trim it down internally\n"
+        f"4. Follow the exact output format specified in the system prompt\n\n"
+        f"⚠️ You MUST provide the COMPLETE final response after the word count line. "
         f"Do NOT stop after just showing the word count or saying you need to reduce it. "
-        f"Provide the full trimmed statement that is ready to use. ⚠️"
+        f"Provide the full trimmed response that is ready to use. ⚠️"
     )
 
     message = client.messages.create(
         model=CLAUDE_MODEL,
         max_tokens=4000,
-        system=SYSTEM_PROMPT,
+        system=system_prompt,
         messages=[
             {
                 "role": "user",

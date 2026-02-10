@@ -1,0 +1,48 @@
+{
+  "default": {
+    "name": "Standard NHS England Format",
+    "description": "Standard supporting information format with Trust Values and Person Specification criteria",
+    "word_limit": 1500
+  },
+  "scotland_3_questions": {
+    "name": "NHS Scotland 3-Question Format",
+    "description": "Three-question format used by NHS Scotland trusts",
+    "word_limit": 1250,
+    "questions": [
+      {
+        "number": 1,
+        "text": "Why do you think you are suitable for this role? (Describe how your skills, knowledge and experience match the person specification, while also explaining your motivation and goals.)",
+        "word_limit": 500
+      },
+      {
+        "number": 2,
+        "text": "Why do you want to work for the NHS? (think about the NHS and or Board Values)",
+        "word_limit": 500
+      },
+      {
+        "number": 3,
+        "text": "Is there any other relevant information that will assist us in shortlisting your application (if none, please state)",
+        "word_limit": 250
+      }
+    ],
+    "trusts": [
+      "NHS Ayrshire and Arran",
+      "NHS Borders",
+      "NHS Dumfries and Galloway",
+      "NHS Fife",
+      "NHS Grampian",
+      "NHS Greater Glasgow and Clyde",
+      "NHS Highland",
+      "NHS Lanarkshire",
+      "NHS Lothian",
+      "NHS Orkney",
+      "NHS Shetland",
+      "NHS Tayside",
+      "NHS Western Isles",
+      "NHS National Services Scotland",
+      "NHS Golden Jubilee",
+      "NHS Forth Valley",
+      "NHS Swansea Bay"
+    ]
+  }
+}

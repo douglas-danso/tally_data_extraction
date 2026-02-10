@@ -1,82 +1,2152 @@
 {
-  "Wirral University Teaching Hospital NHS Foundation Trust": {
-    "values": ["Respect", "Compassion", "Teamwork", "Equality", "Safety"],
-    "description": "Treat people with dignity, work together, provide safe and inclusive care."
+  "Airedale NHS Foundation Trust": {
+    "values": [
+      "Compassion",
+      "Improving lives",
+      "Commitment to quality of care",
+      "Working together for patients"
+    ],
+    "description": "Values: Compassion, Improving lives, Commitment to quality of care"
+  },
+  "Alder Hey Children’s NHS Foundation Trust": {
+    "values": [
+      "Respect",
+      "Excellence",
+      "Innovation",
+      "Together",
+      "Openness"
+    ],
+    "description": "Values: Respect, Excellence, Innovation"
+  },
+  "Aneurin Bevan University Health Board": {
+    "values": [
+      "People First",
+      "Personal Responsibility",
+      "Passion for Improvement",
+      "Pride in What We Do"
+    ],
+    "description": "Values: People First, Personal Responsibility, Passion for Improvement"
+  },
+  "Ashford and St Peter’s Hospitals NHS Foundation Trust": {
+    "values": [
+      "Patients First",
+      "Personal Responsibility",
+      "Passion for Excellence",
+      "Pride in Our Team"
+    ],
+    "description": "Values: Patients First, Personal Responsibility, Passion for Excellence"
+  },
+  "Avon and Wiltshire Mental Health Partnership NHS Trust": {
+    "values": [
+      "Passion",
+      "Respect",
+      "Integrity",
+      "Diversity",
+      "Excellence (PRIDE)"
+    ],
+    "description": "Values: Passion, Respect, Integrity"
+  },
+  "Barking, Havering and Redbridge University Hospitals NHS Trust": {
+    "values": [
+      "Passion",
+      "Responsibility",
+      "Innovation",
+      "Drive",
+      "Empowerment (PRIDE)"
+    ],
+    "description": "Values: Passion, Responsibility, Innovation"
+  },
+  "Barnet Enfield and Haringey Mental Health NHS Trust": {
+    "values": [
+      "Compassion",
+      "Respect",
+      "Being Positive",
+      "Working Together"
+    ],
+    "description": "Values: Compassion, Respect, Being Positive"
+  },
+  "Barnsley Hospital NHS Foundation Trust": {
+    "values": [
+      "Respect",
+      "Teamwork",
+      "Diversity"
+    ],
+    "description": "Values: Respect, Teamwork, Diversity"
   },
   "Barts Health NHS Trust": {
-    "values": ["Respect", "Inclusion", "Excellence", "Safety"],
-    "description": "Put patients first, work inclusively, aim for high standards."
+    "values": [
+      "Welcoming",
+      "Engaging",
+      "Collaborative",
+      "Accountable",
+      "Respectful",
+      "Equitable"
+    ],
+    "description": "Values: Welcoming, Engaging, Collaborative"
   },
-  "Guy's and St Thomas' NHS Foundation Trust": {
-    "values": ["Care", "Collaboration", "Innovation", "Respect"],
-    "description": "Deliver caring, modern healthcare through teamwork."
+  "Bedfordshire Hospitals NHS Foundation Trust": {
+    "values": [
+      "Teamwork",
+      "Honesty & Openness",
+      "Respect",
+      "Inclusivity",
+      "Valuing People",
+      "Excellence (THRIVE)"
+    ],
+    "description": "Values: Teamwork, Honesty & Openness, Respect"
   },
-  "Manchester University NHS Foundation Trust": {
-    "values": ["Compassion", "Excellence", "Respect", "Teamwork"],
-    "description": "High-quality care delivered with kindness."
+  "Berkshire Healthcare NHS Foundation Trust": {
+    "values": [
+      "Caring for and about you",
+      "Committed to providing safe services",
+      "Working together"
+    ],
+    "description": "Values: Caring for and about you, Committed to providing safe services, Working together"
   },
-  "Leeds Teaching Hospitals NHS Trust": {
-    "values": ["Patient-Centred", "Safe", "Professional", "Respectful"],
-    "description": "Focus on safety and patient experience."
+  "Betsi Cadwaladr University Health Board": {
+    "values": [
+      "Compassion",
+      "Openness",
+      "Respect"
+    ],
+    "description": "Values: Compassion, Openness, Respect"
+  },
+  "Birmingham Community Healthcare NHS Foundation Trust": {
+    "values": [
+      "Caring",
+      "Open",
+      "Respectful",
+      "Responsible",
+      "Inclusive"
+    ],
+    "description": "Values: Caring, Open, Respectful"
   },
   "Birmingham Women's and Children's NHS Foundation Trust": {
-    "values": ["Kindness", "Respect", "Excellence", "Inclusion"],
+    "values": [
+      "Kindness",
+      "Respect",
+      "Excellence",
+      "Inclusion"
+    ],
     "description": "Support families with compassionate care."
   },
-  "Imperial College Healthcare NHS Trust": {
-    "values": ["Respect", "Collaboration", "Innovation", "Quality"],
-    "description": "Combine research and care safely."
+  "Birmingham Women’s and Children’s NHS Foundation Trust": {
+    "values": [
+      "Ambitious",
+      "Brave",
+      "Compassionate"
+    ],
+    "description": "Values: Ambitious, Brave, Compassionate"
   },
-  "King's College Hospital NHS Foundation Trust": {
-    "values": ["Care", "Respect", "Teamwork", "Improvement"],
-    "description": "Strong focus on patient safety and teamwork."
+  "Birmingham and Solihull Mental Health NHS Foundation Trust": {
+    "values": [
+      "Compassionate",
+      "Inclusive",
+      "Committed"
+    ],
+    "description": "Values: Compassionate, Inclusive, Committed"
   },
-  "Nottingham University Hospitals NHS Trust": {
-    "values": ["Kindness", "Trust", "Excellence", "Teamwork"],
-    "description": "Deliver care with integrity and quality."
+  "Black Country Healthcare NHS Foundation Trust": {
+    "values": [
+      "Compassionate",
+      "Accountable",
+      "Respectful",
+      "Empowered (We CARE)"
+    ],
+    "description": "Values: Compassionate, Accountable, Respectful"
   },
-  "Oxford University Hospitals NHS Foundation Trust": {
-    "values": ["Compassion", "Respect", "Excellence", "Learning"],
-    "description": "Support patients with skilled care."
+  "Blackpool Teaching Hospitals NHS Foundation Trust": {
+    "values": [
+      "People Centred",
+      "Compassion",
+      "Positive",
+      "Excellence"
+    ],
+    "description": "Values: People Centred, Compassion, Positive"
   },
-  "University College London Hospitals NHS Foundation Trust": {
-    "values": ["Safety", "Respect", "Excellence", "Teamwork"],
-    "description": "High standards of care through collaboration."
+  "Bolton NHS Foundation Trust": {
+    "values": [
+      "Vision",
+      "Openness",
+      "Integrity",
+      "Compassion",
+      "Excellence"
+    ],
+    "description": "Values: Vision, Openness, Integrity"
   },
-  "Royal Free London NHS Foundation Trust": {
-    "values": ["Compassion", "Respect", "Safety", "Improvement"],
-    "description": "Patient-focused, safe healthcare."
+  "Bradford District Care NHS Foundation Trust": {
+    "values": [
+      "We Care",
+      "We Listen",
+      "We Deliver"
+    ],
+    "description": "Values: We Care, We Listen, We Deliver"
   },
-  "East Kent Hospitals University NHS Foundation Trust": {
-    "values": ["Kindness", "Respect", "Teamwork", "Quality"],
-    "description": "Delivering care with dignity."
+  "Bradford Teaching Hospitals NHS Foundation Trust": {
+    "values": [
+      "Kindness",
+      "Respect",
+      "Partnership",
+      "Learning & Improvement"
+    ],
+    "description": "Values: Kindness, Respect, Partnership"
   },
-  "Sheffield Teaching Hospitals NHS Foundation Trust": {
-    "values": ["Patient First", "Safe", "Caring", "Professional"],
-    "description": "Putting patients at the centre."
-  },
-  "Liverpool University Hospitals NHS Foundation Trust": {
-    "values": ["Respect", "Kindness", "Teamwork", "Quality"],
-    "description": "Caring, safe, inclusive healthcare."
-  },
-  "North West Anglia NHS Foundation Trust": {
-    "values": ["Compassion", "Respect", "Teamwork", "Excellence"],
-    "description": "Supporting patients with dignity."
+  "Bridgewater Community Healthcare NHS Foundation Trust": {
+    "values": [
+      "Person Centred",
+      "Empowered",
+      "Open & Honest",
+      "Professional",
+      "Local",
+      "Efficient (PEOPLE)"
+    ],
+    "description": "Values: Person Centred, Empowered, Open & Honest"
   },
   "Brighton and Sussex University Hospitals NHS Trust": {
-    "values": ["Kindness", "Respect", "Safety", "Improvement"],
+    "values": [
+      "Kindness",
+      "Respect",
+      "Safety",
+      "Improvement"
+    ],
     "description": "Safe, caring, and improving services."
   },
-  "Mid and South Essex NHS Foundation Trust": {
-    "values": ["Compassion", "Respect", "Quality", "Teamwork"],
-    "description": "Focused on patient-centred care."
+  "Buckinghamshire Healthcare NHS Trust": {
+    "values": [
+      "Outstanding care",
+      "Healthy communities",
+      "Great place to work"
+    ],
+    "description": "Values: Outstanding care, Healthy communities, Great place to work"
+  },
+  "Calderdale and Huddersfield NHS Foundation Trust": {
+    "values": [
+      "Compassion",
+      "Respect",
+      "Integrity",
+      "Partnership"
+    ],
+    "description": "Values: Compassion, Respect, Integrity"
+  },
+  "Cambridge University Hospitals NHS Foundation Trust": {
+    "values": [
+      "Together",
+      "Safe",
+      "Kind",
+      "Excellent"
+    ],
+    "description": "Values: Together, Safe, Kind"
+  },
+  "Cambridgeshire Community Services NHS Trust": {
+    "values": [
+      "Honesty",
+      "Empathy",
+      "Ambition",
+      "Respect"
+    ],
+    "description": "Values: Honesty, Empathy, Ambition"
+  },
+  "Cambridgeshire and Peterborough NHS Foundation Trust": {
+    "values": [
+      "Professional",
+      "Respect",
+      "Innovation",
+      "Dignity",
+      "Empowerment (PRIDE)"
+    ],
+    "description": "Values: Professional, Respect, Innovation"
+  },
+  "Central London Community Healthcare NHS Trust": {
+    "values": [
+      "Accountability",
+      "Inclusion",
+      "Compassion",
+      "Empowerment"
+    ],
+    "description": "Values: Accountability, Inclusion, Compassion"
+  },
+  "Central and North West London NHS Foundation Trust": {
+    "values": [
+      "Compassion",
+      "Respect",
+      "Empowerment",
+      "Partnership"
+    ],
+    "description": "Values: Compassion, Respect, Empowerment"
+  },
+  "Chelsea and Westminster Hospital NHS Foundation Trust": {
+    "values": [
+      "Putting patients first",
+      "Responsive to patients and staff",
+      "Open and honest",
+      "Unfailingly kind",
+      "Determined to develop (PROUD)"
+    ],
+    "description": "Values: Putting patients first, Responsive to patients and staff, Open and honest"
+  },
+  "Cheshire and Wirral Partnership NHS Foundation Trust": {
+    "values": [
+      "Care",
+      "Compassion",
+      "Competence",
+      "Communication",
+      "Courage",
+      "Commitment"
+    ],
+    "description": "Values: Care, Compassion, Competence"
+  },
+  "Chesterfield Royal Hospital NHS Foundation Trust": {
+    "values": [
+      "Compassion",
+      "Ambition",
+      "Respect",
+      "Encouragement (CARE)"
+    ],
+    "description": "Values: Compassion, Ambition, Respect"
+  },
+  "City Health Care Partnership CIC": {
+    "values": [
+      "Service & Excellence",
+      "Equality, Diversity & Inclusion",
+      "Creativity & Innovation",
+      "Co-operation & Partnership"
+    ],
+    "description": "Values: Service & Excellence, Equality, Diversity & Inclusion, Creativity & Innovation"
+  },
+  "Cornwall Partnership NHS Foundation Trust": {
+    "values": [
+      "Compassion",
+      "Happiness",
+      "Ownership",
+      "Integrity",
+      "Connection",
+      "Equity (CHOICE)"
+    ],
+    "description": "Values: Compassion, Happiness, Ownership"
+  },
+  "Countess of Chester Hospital NHS Foundation Trust": {
+    "values": [
+      "Safe",
+      "Kind",
+      "Effective"
+    ],
+    "description": "Values: Safe, Kind, Effective"
+  },
+  "County Durham and Darlington NHS Foundation Trust": {
+    "values": [
+      "Compassion",
+      "Respect & dignity",
+      "Working Together",
+      "Commitment to quality of care",
+      "Improving lives"
+    ],
+    "description": "Values: Compassion, Respect & dignity, Working Together"
+  },
+  "Coventry and Warwickshire Partnership NHS Trust": {
+    "values": [
+      "Compassion",
+      "Excellence",
+      "Respect",
+      "Integrity",
+      "Collaboration"
+    ],
+    "description": "Values: Compassion, Excellence, Respect"
+  },
+  "Croydon Health Services NHS Trust": {
+    "values": [
+      "Professional",
+      "Compassionate",
+      "Respectful",
+      "Safe"
+    ],
+    "description": "Values: Professional, Compassionate, Respectful"
+  },
+  "Cumbria, Northumberland, Tyne and Wear NHS Foundation Trust": {
+    "values": [
+      "Compassion",
+      "Respect",
+      "Integrity",
+      "Responsibility",
+      "Quality"
+    ],
+    "description": "Values: Compassion, Respect, Integrity"
+  },
+  "Cwm Taf Morgannwg University Health Board": {
+    "values": [
+      "We listen, learn and improve",
+      "We treat everyone with respect",
+      "We all work together as one team"
+    ],
+    "description": "Values: We listen, learn and improve, We treat everyone with respect, We all work together as one team"
+  },
+  "Dartford and Gravesham NHS Trust": {
+    "values": [
+      "Care with compassion",
+      "Respect and dignity",
+      "Strive to excel"
+    ],
+    "description": "Values: Care with compassion, Respect and dignity, Strive to excel"
+  },
+  "Derbyshire Community Health Services NHS Foundation Trust": {
+    "values": [
+      "Get the basics right",
+      "Act with compassion and respect",
+      "Make a positive difference",
+      "Value and develop teamwork",
+      "Value diversity and inclusivity"
+    ],
+    "description": "Values: Get the basics right, Act with compassion and respect, Make a positive difference"
+  },
+  "Derbyshire Healthcare NHS Foundation Trust": {
+    "values": [
+      "Caring",
+      "Inclusive",
+      "Ambitious",
+      "Belonging",
+      "Collaborative"
+    ],
+    "description": "Values: Caring, Inclusive, Ambitious"
+  },
+  "Devon Partnership NHS Trust": {
+    "values": [
+      "Respect",
+      "Recovery-focused care",
+      "Partnership working",
+      "Quality improvement"
+    ],
+    "description": "Values: Respect, Recovery-focused care, Partnership working"
+  },
+  "Doncaster and Bassetlaw Teaching Hospitals NHS Foundation Trust": {
+    "values": [
+      "Compassion",
+      "Respect",
+      "Teamwork",
+      "Excellence"
+    ],
+    "description": "Values: Compassion, Respect, Teamwork"
+  },
+  "Dorset County Hospital NHS Foundation Trust": {
+    "values": [
+      "Respect",
+      "Integrity",
+      "Teamwork",
+      "Excellence"
+    ],
+    "description": "Values: Respect, Integrity, Teamwork"
+  },
+  "Dorset Healthcare University NHS Foundation Trust": {
+    "values": [
+      "Working together for patients",
+      "Respect & dignity",
+      "Commitment to quality care",
+      "Compassion",
+      "Improving lives",
+      "Everyone counts",
+      "Commitment to learning"
+    ],
+    "description": "Values: Working together for patients, Respect & dignity, Commitment to quality care"
+  },
+  "East Cheshire NHS Trust": {
+    "values": [
+      "Treat each other with respect and dignity",
+      "Commitment to quality of care",
+      "Show compassion",
+      "Improve lives",
+      "Working together for patients",
+      "Make everyone count"
+    ],
+    "description": "Values: Treat each other with respect and dignity, Commitment to quality of care, Show compassion"
+  },
+  "East Kent Hospitals University NHS Foundation Trust": {
+    "values": [
+      "Caring",
+      "Safe",
+      "Respect",
+      "Making a difference (People feel cared for, safe, respected, confident we are making a difference)"
+    ],
+    "description": "Values: Caring, Safe, Respect"
+  },
+  "East Lancashire Hospitals NHS Trust": {
+    "values": [
+      "We put patients first",
+      "We respect the individual",
+      "We act with integrity",
+      "We serve the community",
+      "We promote positive change"
+    ],
+    "description": "Values: We put patients first, We respect the individual, We act with integrity"
+  },
+  "East London NHS Foundation Trust": {
+    "values": [
+      "We care",
+      "We respect",
+      "We are inclusive"
+    ],
+    "description": "Values: We care, We respect, We are inclusive"
+  },
+  "East Midlands Ambulance Service NHS Trust": {
+    "values": [
+      "Respect",
+      "Integrity",
+      "Contribution",
+      "Teamwork",
+      "Compassion"
+    ],
+    "description": "Values: Respect, Integrity, Contribution"
+  },
+  "East Suffolk and North Essex NHS Foundation Trust": {
+    "values": [
+      "Optimistic",
+      "Appreciative",
+      "Kind (OAK)"
+    ],
+    "description": "Values: Optimistic, Appreciative, Kind (OAK)"
+  },
+  "East Sussex Healthcare NHS Trust": {
+    "values": [
+      "Kindness",
+      "Inclusivity",
+      "Integrity"
+    ],
+    "description": "Values: Kindness, Inclusivity, Integrity"
+  },
+  "East and North Hertfordshire NHS Trust": {
+    "values": [
+      "Include",
+      "Respect",
+      "Improve"
+    ],
+    "description": "Values: Include, Respect, Improve"
+  },
+  "East of England Ambulance Service NHS Trust": {
+    "values": [
+      "Care",
+      "Teamwork",
+      "Quality",
+      "Respect",
+      "Honesty"
+    ],
+    "description": "Values: Care, Teamwork, Quality"
+  },
+  "Epsom and St Helier University Hospitals NHS Trust": {
+    "values": [
+      "Above all: Respect (behaviours: Kind",
+      "Positive",
+      "Professional",
+      "Teamwork)"
+    ],
+    "description": "Values: Above all: Respect (behaviours: Kind, Positive, Professional"
+  },
+  "Essex Partnership University NHS Foundation Trust": {
+    "values": [
+      "We Care",
+      "We Learn",
+      "We Empower"
+    ],
+    "description": "Values: We Care, We Learn, We Empower"
   },
   "Frimley Health NHS Foundation Trust": {
-    "values": ["Committed to Excellence", "Working Together", "Facing the Future"],
-    "description": "High-quality care through teamwork."
+    "values": [
+      "Committed to excellence",
+      "Working together",
+      "Facing the future"
+    ],
+    "description": "Values: Committed to excellence, Working together, Facing the future"
+  },
+  "Gateshead Health NHS Foundation Trust": {
+    "values": [
+      "Innovation",
+      "Care",
+      "Openness",
+      "Respect",
+      "Engagement (ICORE)"
+    ],
+    "description": "Values: Innovation, Care, Openness"
+  },
+  "George Eliot Hospital NHS Trust": {
+    "values": [
+      "Effective open communication",
+      "Excellence and safety in everything we do",
+      "Challenge but support",
+      "Expect respect and dignity",
+      "Local health that inspires confidence (EXCEL)"
+    ],
+    "description": "Values: Effective open communication, Excellence and safety in everything we do, Challenge but support"
+  },
+  "Gloucestershire Health and Care NHS Foundation Trust": {
+    "values": [
+      "Working together",
+      "Always improving",
+      "Respectful and kind",
+      "Making a difference"
+    ],
+    "description": "Values: Working together, Always improving, Respectful and kind"
+  },
+  "Gloucestershire Hospitals NHS Foundation Trust": {
+    "values": [
+      "Caring",
+      "Compassionate",
+      "Inclusive",
+      "Accountable"
+    ],
+    "description": "Values: Caring, Compassionate, Inclusive"
+  },
+  "Great Ormond Street Hospital for Children NHS Foundation Trust": {
+    "values": [
+      "Always welcoming",
+      "Always helpful",
+      "Always expert",
+      "Always one team"
+    ],
+    "description": "Values: Always welcoming, Always helpful, Always expert"
+  },
+  "Great Western Hospitals NHS Foundation Trust": {
+    "values": [
+      "STAR: Service",
+      "Teamwork",
+      "Ambition",
+      "Respect"
+    ],
+    "description": "Values: STAR: Service, Teamwork, Ambition"
+  },
+  "Greater Manchester Mental Health NHS Foundation Trust": {
+    "values": [
+      "Proud to care",
+      "Improving lives",
+      "Working together",
+      "Being open"
+    ],
+    "description": "Values: Proud to care, Improving lives, Working together"
+  },
+  "Guy's and St Thomas' NHS Foundation Trust": {
+    "values": [
+      "Care",
+      "Collaboration",
+      "Innovation",
+      "Respect"
+    ],
+    "description": "Deliver caring, modern healthcare through teamwork."
+  },
+  "Guy’s and St Thomas’ NHS Foundation Trust": {
+    "values": [
+      "Caring",
+      "Ambitious",
+      "Inclusive"
+    ],
+    "description": "Values: Caring, Ambitious, Inclusive"
+  },
+  "Hampshire Hospitals NHS Foundation Trust": {
+    "values": [
+      "CARE: Compassion",
+      "Accountability",
+      "Respect",
+      "Encouragement"
+    ],
+    "description": "Values: CARE: Compassion, Accountability, Respect"
+  },
+  "Hampshire and Isle of Wight Healthcare NHS Foundation Trust": {
+    "values": [
+      "Honesty",
+      "Everyone Counts",
+      "Accountability",
+      "Respect",
+      "Teamwork"
+    ],
+    "description": "Values: Honesty, Everyone Counts, Accountability"
+  },
+  "Harrogate and District NHS Foundation Trust": {
+    "values": [
+      "Kindness",
+      "Integrity",
+      "Teamwork",
+      "Equality"
+    ],
+    "description": "Values: Kindness, Integrity, Teamwork"
+  },
+  "Herefordshire and Worcestershire Health and Care NHS Trust": {
+    "values": [
+      "CORRI: Caring",
+      "Open",
+      "Respectful",
+      "Responsible",
+      "Inclusive"
+    ],
+    "description": "Values: CORRI: Caring, Open, Respectful"
+  },
+  "Hertfordshire Community NHS Trust": {
+    "values": [
+      "Respect",
+      "Responsibility",
+      "Quality",
+      "Innovation"
+    ],
+    "description": "Values: Respect, Responsibility, Quality"
+  },
+  "Hertfordshire Partnership University NHS Foundation Trust": {
+    "values": [
+      "Caring",
+      "Learning",
+      "Inclusion"
+    ],
+    "description": "Values: Caring, Learning, Inclusion"
+  },
+  "Homerton Healthcare NHS Foundation Trust": {
+    "values": [
+      "Personal (compassionate care)",
+      "Safe",
+      "Respectful",
+      "Inclusive",
+      "Responsible"
+    ],
+    "description": "Values: Personal (compassionate care), Safe, Respectful"
+  },
+  "Hounslow and Richmond Community Healthcare NHS Trust": {
+    "values": [
+      "Quality",
+      "People-centred",
+      "Collaborative",
+      "Innovative"
+    ],
+    "description": "Values: Quality, People-centred, Collaborative"
+  },
+  "Hull University Teaching Hospitals NHS Trust": {
+    "values": [
+      "Compassion",
+      "Honesty",
+      "Respect",
+      "Teamwork"
+    ],
+    "description": "Values: Compassion, Honesty, Respect"
+  },
+  "Humber Teaching NHS Foundation Trust": {
+    "values": [
+      "Caring",
+      "Learning",
+      "Growing"
+    ],
+    "description": "Values: Caring, Learning, Growing"
+  },
+  "Hywel Dda University Health Board": {
+    "values": [
+      "Putting people first",
+      "Improving services",
+      "Working together"
+    ],
+    "description": "Values: Putting people first, Improving services, Working together"
+  },
+  "Imperial College Healthcare NHS Trust": {
+    "values": [
+      "Kind",
+      "Expert",
+      "Collaborative",
+      "Aspirational"
+    ],
+    "description": "Values: Kind, Expert, Collaborative"
+  },
+  "Isle of Wight NHS Trust": {
+    "values": [
+      "Compassion",
+      "Accountability",
+      "Respect",
+      "Excellence"
+    ],
+    "description": "Values: Compassion, Accountability, Respect"
+  },
+  "James Paget University Hospitals NHS Foundation Trust": {
+    "values": [
+      "Putting patients first",
+      "Working together",
+      "Respect",
+      "Responsibility"
+    ],
+    "description": "Values: Putting patients first, Working together, Respect"
+  },
+  "Kent Community Health NHS Foundation Trust": {
+    "values": [
+      "Compassionate",
+      "Aspirational (empowering, respectful, inclusive behaviours embedded)"
+    ],
+    "description": "Values: Compassionate, Aspirational (empowering, respectful, inclusive behaviours embedded)"
+  },
+  "Kent and Medway NHS and Social Care Partnership Trust": {
+    "values": [
+      "Caring",
+      "Curious",
+      "Inclusive",
+      "Confident"
+    ],
+    "description": "Values: Caring, Curious, Inclusive"
+  },
+  "Kettering General Hospital NHS Foundation Trust": {
+    "values": [
+      "Courage",
+      "Accountability",
+      "Compassion",
+      "Integrity",
+      "Respect"
+    ],
+    "description": "Values: Courage, Accountability, Compassion"
+  },
+  "King's College Hospital NHS Foundation Trust": {
+    "values": [
+      "Kind",
+      "Respectful",
+      "Team"
+    ],
+    "description": "Values: Kind, Respectful, Team"
+  },
+  "Lancashire Teaching Hospitals NHS Foundation Trust": {
+    "values": [
+      "Caring and compassionate",
+      "Recognising individuality",
+      "Seeking to involve",
+      "Team working",
+      "Taking personal responsibility"
+    ],
+    "description": "Values: Caring and compassionate, Recognising individuality, Seeking to involve"
+  },
+  "Lancashire and South Cumbria NHS Foundation Trust": {
+    "values": [
+      "Compassion",
+      "Respect",
+      "Integrity",
+      "Accountability",
+      "Courage"
+    ],
+    "description": "Values: Compassion, Respect, Integrity"
+  },
+  "Leeds Community Healthcare NHS Trust": {
+    "values": [
+      "Fair",
+      "Compassionate",
+      "Accountable",
+      "Collaborative",
+      "Empowered (aligned to “Leeds Way” values used across Leeds system partners)"
+    ],
+    "description": "Values: Fair, Compassionate, Accountable"
+  },
+  "Leeds Teaching Hospitals NHS Trust": {
+    "values": [
+      "Patient-centred",
+      "Fair",
+      "Collaborative",
+      "Accountable",
+      "Empowered"
+    ],
+    "description": "Values: Patient-centred, Fair, Collaborative"
+  },
+  "Leeds and York Partnership NHS Foundation Trust": {
+    "values": [
+      "Compassion",
+      "Respect",
+      "Inclusion",
+      "Integrity"
+    ],
+    "description": "Values: Compassion, Respect, Inclusion"
+  },
+  "Leicestershire Partnership NHS Trust": {
+    "values": [
+      "Compassion",
+      "Respect",
+      "Integrity",
+      "Trust"
+    ],
+    "description": "Values: Compassion, Respect, Integrity"
+  },
+  "Lewisham and Greenwich NHS Trust": {
+    "values": [
+      "Respect",
+      "Compassion",
+      "Inclusion (supported by accountability, listening, and teamwork behaviours)"
+    ],
+    "description": "Values: Respect, Compassion, Inclusion (supported by accountability, listening, and teamwork behaviours)"
+  },
+  "Lincolnshire Community Health Services NHS Trust": {
+    "values": [
+      "Kindness",
+      "Courage",
+      "Respect",
+      "Excellence"
+    ],
+    "description": "Values: Kindness, Courage, Respect"
+  },
+  "Lincolnshire Partnership NHS Foundation Trust": {
+    "values": [
+      "Respect",
+      "Kindness",
+      "Courage",
+      "Collaboration"
+    ],
+    "description": "Values: Respect, Kindness, Courage"
+  },
+  "Liverpool Heart and Chest Hospital NHS Foundation Trust": {
+    "values": [
+      "Caring",
+      "Respect",
+      "Teamwork",
+      "Excellence"
+    ],
+    "description": "Values: Caring, Respect, Teamwork"
+  },
+  "Liverpool University Hospitals NHS Foundation Trust": {
+    "values": [
+      "Compassion",
+      "Dignity",
+      "Respect",
+      "Openness",
+      "Accountability",
+      "Teamwork"
+    ],
+    "description": "Values: Compassion, Dignity, Respect"
+  },
+  "Liverpool Women's NHS Foundation Trust": {
+    "values": [
+      "Care",
+      "Compassion",
+      "Respect",
+      "Excellence"
+    ],
+    "description": "Values: Care, Compassion, Respect"
+  },
+  "London Ambulance Service NHS Trust": {
+    "values": [
+      "Respect",
+      "Teamwork",
+      "Responsibility",
+      "Innovation",
+      "Care"
+    ],
+    "description": "Values: Respect, Teamwork, Responsibility"
+  },
+  "London North West University Healthcare NHS Trust": {
+    "values": [
+      "Caring",
+      "Respect",
+      "Excellence",
+      "Teamwork"
+    ],
+    "description": "Values: Caring, Respect, Excellence"
+  },
+  "Maidstone and Tunbridge Wells NHS Trust": {
+    "values": [
+      "Respect",
+      "Compassion",
+      "Integrity",
+      "Teamwork",
+      "Innovation"
+    ],
+    "description": "Values: Respect, Compassion, Integrity"
+  },
+  "Manchester University NHS Foundation Trust": {
+    "values": [
+      "We are compassionate",
+      "We are curious",
+      "We are collaborative",
+      "W are open and honest",
+      "We are inclusive"
+    ],
+    "description": "Values: We are compassionate, We are curious, We are collaborative"
+  },
+  "Medway NHS Foundation Trust": {
+    "values": [
+      "Bold",
+      "Every Person Counts",
+      "Sharing & Open",
+      "Together (Best of care, Best of People)"
+    ],
+    "description": "Values: Bold, Every Person Counts, Sharing & Open"
+  },
+  "Mersey Care NHS Foundation Trust": {
+    "values": [
+      "Continuous improvement",
+      "Accountability",
+      "Respect",
+      "Enthusiasm",
+      "Support (CARES)"
+    ],
+    "description": "Values: Continuous improvement, Accountability, Respect"
+  },
+  "Mersey and West Lancashire Teaching Hospitals NHS Trust": {
+    "values": [
+      "We are kind",
+      "We are open",
+      "We are inclusive"
+    ],
+    "description": "Values: We are kind, We are open, We are inclusive"
+  },
+  "Mid Cheshire Hospitals NHS Foundation Trust": {
+    "values": [
+      "We put you first",
+      "We strive for more",
+      "We respect you",
+      "We work together"
+    ],
+    "description": "Values: We put you first, We strive for more, We respect you"
+  },
+  "Mid Yorkshire Hospitals NHS Trust": {
+    "values": [
+      "Caring",
+      "High standards",
+      "Improving",
+      "Respect"
+    ],
+    "description": "Values: Caring, High standards, Improving"
+  },
+  "Mid and South Essex NHS Foundation Trust": {
+    "values": [
+      "Excellent",
+      "Compassionate",
+      "Respectful"
+    ],
+    "description": "Values: Excellent, Compassionate, Respectful"
+  },
+  "Midlands Partnership University NHS Foundation Trust": {
+    "values": [
+      "Putting people at the heart of what we do",
+      "Empowering people to improve care and wellbeing",
+      "Delivering better health, better care in partnership"
+    ],
+    "description": "Values: Putting people at the heart of what we do, Empowering people to improve care and wellbeing, Delivering better health, better care in partnership"
+  },
+  "Milton Keynes University Hospital NHS Foundation Trust": {
+    "values": [
+      "Care",
+      "Respect",
+      "Excellence",
+      "Teamwork (CREST)"
+    ],
+    "description": "Values: Care, Respect, Excellence"
+  },
+  "Moorfields Eye Hospital NHS Foundation Trust": {
+    "values": [
+      "Equity",
+      "Excellence",
+      "Kindness"
+    ],
+    "description": "Values: Equity, Excellence, Kindness"
+  },
+  "NHS Ayrshire and Arran": {
+    "values": [
+      "Caring",
+      "Safe",
+      "Respectful"
+    ],
+    "description": "Caring, safe and respectful healthcare."
+  },
+  "NHS Borders": {
+    "values": [
+      "Care & Compassion",
+      "Dignity & Respect",
+      "Openness",
+      "Honesty & Responsibility",
+      "Quality and Teamwork"
+    ],
+    "description": "Healthcare delivered with compassion, dignity and quality."
+  },
+  "NHS Dumfries and Galloway": {
+    "values": [
+      "Compassion",
+      "Openness",
+      "Respect",
+      "Excellence"
+    ],
+    "description": "Excellence in care with compassion and respect."
+  },
+  "NHS Fife": {
+    "values": [
+      "Care & Compassion",
+      "Dignity & Respect",
+      "Openness",
+      "Honesty & Responsibility",
+      "Quality and Teamwork"
+    ],
+    "description": "Healthcare delivered with compassion, dignity and quality."
+  },
+  "NHS Forth Valley": {
+    "values": [
+      "Person-centred",
+      "Respectful",
+      "Integrity",
+      "Ambitious",
+      "Supportive",
+      "Committed team member"
+    ],
+    "description": "Person-centred care with integrity and ambition."
+  },
+  "NHS Golden Jubilee": {
+    "values": [
+      "Care & Compassion",
+      "Dignity & Respect",
+      "Openness",
+      "Honesty & Responsibility",
+      "Quality and Teamwork"
+    ],
+    "description": "Healthcare delivered with compassion, dignity and quality."
+  },
+  "NHS Grampian": {
+    "values": [
+      "Caring",
+      "Listening",
+      "Improving"
+    ],
+    "description": "Caring healthcare that listens and improves."
+  },
+  "NHS Greater Glasgow and Clyde": {
+    "values": [
+      "Care & Compassion",
+      "Dignity & Respect",
+      "Openness",
+      "Honesty & Responsibility",
+      "Quality and Teamwork"
+    ],
+    "description": "Healthcare delivered with compassion, dignity and quality."
+  },
+  "NHS Highland": {
+    "values": [
+      "Care & Compassion",
+      "Dignity & Respect",
+      "Openness",
+      "Honesty & Responsibility",
+      "Quality and Teamwork"
+    ],
+    "description": "Healthcare delivered with compassion, dignity and quality."
+  },
+  "NHS Lanarkshire": {
+    "values": [
+      "Care & Compassion",
+      "Dignity & Respect",
+      "Openness",
+      "Honesty & Responsibility",
+      "Quality and Teamwork"
+    ],
+    "description": "Healthcare delivered with compassion, dignity and quality."
+  },
+  "NHS Lothian": {
+    "values": [
+      "Care & Compassion",
+      "Dignity & Respect",
+      "Openness",
+      "Honesty & Responsibility",
+      "Quality and Teamwork"
+    ],
+    "description": "Healthcare delivered with compassion, dignity and quality."
+  },
+  "NHS National Services Scotland": {
+    "values": [
+      "Care & Compassion",
+      "Dignity & Respect",
+      "Openness",
+      "Honesty & Responsibility",
+      "Quality and Teamwork"
+    ],
+    "description": "Healthcare delivered with compassion, dignity and quality."
+  },
+  "NHS Orkney": {
+    "values": [
+      "Open and Honest",
+      "Respectful",
+      "Kindness"
+    ],
+    "description": "Open, honest and kind healthcare."
+  },
+  "NHS Shetland": {
+    "values": [
+      "Care & Compassion",
+      "Dignity & Respect",
+      "Openness",
+      "Honesty & Responsibility",
+      "Quality and Teamwork"
+    ],
+    "description": "Healthcare delivered with compassion, dignity and quality."
+  },
+  "NHS Swansea Bay": {
+    "values": [
+      "Caring for each other",
+      "Working together",
+      "Always improving"
+    ],
+    "description": "Caring, collaborative and continuously improving."
+  },
+  "NHS Tayside": {
+    "values": [
+      "Care & Compassion",
+      "Dignity & Respect",
+      "Openness",
+      "Honesty & Responsibility",
+      "Quality and Teamwork"
+    ],
+    "description": "Healthcare delivered with compassion, dignity and quality."
+  },
+  "NHS Western Isles": {
+    "values": [
+      "Care & Compassion",
+      "Dignity & Respect",
+      "Openness",
+      "Honesty & Responsibility",
+      "Quality and Teamwork"
+    ],
+    "description": "Healthcare delivered with compassion, dignity and quality."
+  },
+  "Norfolk Community Health and Care NHS Trust": {
+    "values": [
+      "Community",
+      "Compassion",
+      "Creativity"
+    ],
+    "description": "Values: Community, Compassion, Creativity"
+  },
+  "Norfolk and Norwich University Hospitals NHS Foundation Trust": {
+    "values": [
+      "People-focused",
+      "Respect",
+      "Integrity",
+      "Dedication",
+      "Excellence"
+    ],
+    "description": "Values: People-focused, Respect, Integrity"
+  },
+  "Norfolk and Suffolk NHS Foundation Trust": {
+    "values": [
+      "We are a team",
+      "We are accountable",
+      "We learn and improve",
+      "We are kind (TALK)"
+    ],
+    "description": "Values: We are a team, We are accountable, We learn and improve"
+  },
+  "North Bristol NHS Trust": {
+    "values": [
+      "Caring",
+      "Ambitious",
+      "Respectful",
+      "Supportive (NBT CARES)"
+    ],
+    "description": "Values: Caring, Ambitious, Respectful"
+  },
+  "North Cumbria Integrated Care NHS Foundation Trust": {
+    "values": [
+      "Kindness",
+      "Respect",
+      "Ambition",
+      "Collaboration"
+    ],
+    "description": "Values: Kindness, Respect, Ambition"
+  },
+  "North East Ambulance Service NHS Foundation Trust": {
+    "values": [
+      "Compassion",
+      "Accountable & responsible",
+      "Respect",
+      "Excellence & Innovation (CARE)"
+    ],
+    "description": "Values: Compassion, Accountable & responsible, Respect"
+  },
+  "North East London NHS Foundation Trust": {
+    "values": [
+      "We are kind",
+      "We are respectful",
+      "We work together with our communities"
+    ],
+    "description": "Values: We are kind, We are respectful, We work together with our communities"
+  },
+  "North London NHS Foundation Trust": {
+    "values": [
+      "We are kind",
+      "We are respectful",
+      "We work together",
+      "We keep things simple",
+      "We empower",
+      "We are proudly diverse"
+    ],
+    "description": "Values: We are kind, We are respectful, We work together"
+  },
+  "North Staffordshire Combined Healthcare NHS Trust": {
+    "values": [
+      "Proud to CARE: Compassionate",
+      "Approachable",
+      "Responsible",
+      "Excellent"
+    ],
+    "description": "Values: Proud to CARE: Compassionate, Approachable, Responsible"
+  },
+  "North Tees and Hartlepool NHS Foundation Trust": {
+    "values": [
+      "Collaborate",
+      "Aspire",
+      "Respect",
+      "Empathy (CARE)"
+    ],
+    "description": "Values: Collaborate, Aspire, Respect"
+  },
+  "North West Ambulance Service NHS Trust": {
+    "values": [
+      "Working together",
+      "Being at our best",
+      "Making a difference"
+    ],
+    "description": "Values: Working together, Being at our best, Making a difference"
+  },
+  "North West Anglia NHS Foundation Trust": {
+    "values": [
+      "We put patients first",
+      "We are caring and compassionate",
+      "We work positively together",
+      "We are actively respectful",
+      "We seek to improve and develop"
+    ],
+    "description": "Values: We put patients first, We are caring and compassionate, We work positively together"
+  },
+  "North West Boroughs Healthcare NHS Foundation Trust": {
+    "values": [
+      "We care",
+      "We respect",
+      "We listen"
+    ],
+    "description": "Values: We care, We respect, We listen"
+  },
+  "Northampton General Hospital NHS Trust": {
+    "values": [
+      "Courage",
+      "Accountability",
+      "Compassion",
+      "Integrity",
+      "Respect"
+    ],
+    "description": "Values: Courage, Accountability, Compassion"
+  },
+  "Northamptonshire Healthcare NHS Foundation Trust": {
+    "values": [
+      "Trust",
+      "Honesty Respect",
+      "Compassion",
+      "Teamwork"
+    ],
+    "description": "Values: Trust, Honesty Respect, Compassion"
+  },
+  "Northern Care Alliance NHS Foundation Trust": {
+    "values": [
+      "Care",
+      "Appreciate",
+      "Inspire"
+    ],
+    "description": "Values: Care, Appreciate, Inspire"
+  },
+  "Northern Lincolnshire and Goole NHS Foundation Trust": {
+    "values": [
+      "Compassion",
+      "Honesty Respect",
+      "Teamwork"
+    ],
+    "description": "Values: Compassion, Honesty Respect, Teamwork"
+  },
+  "Northumbria Healthcare NHS Foundation Trust": {
+    "values": [
+      "Committed",
+      "Encourage Deliver",
+      "Listen",
+      "Empower"
+    ],
+    "description": "Values: Committed, Encourage Deliver, Listen"
+  },
+  "Nottingham University Hospitals NHS Trust": {
+    "values": [
+      "We are kind",
+      "We are inclusive",
+      "We are ambitious",
+      "One Team"
+    ],
+    "description": "Values: We are kind, We are inclusive, We are ambitious"
+  },
+  "Nottinghamshire Healthcare NHS Foundation Trust": {
+    "values": [
+      "Trust",
+      "Honesty",
+      "Respect",
+      "Compassion",
+      "Teamwork"
+    ],
+    "description": "Values: Trust, Honesty, Respect"
+  },
+  "Oxford Health NHS Foundation Trust": {
+    "values": [
+      "Caring",
+      "Safe",
+      "Excellent"
+    ],
+    "description": "Values: Caring, Safe, Excellent"
+  },
+  "Oxford University Hospitals NHS Foundation Trust": {
+    "values": [
+      "Excellence",
+      "Compassion",
+      "Respect",
+      "Delivery",
+      "Learning",
+      "Improvement"
+    ],
+    "description": "Values: Excellence, Compassion, Respect"
+  },
+  "Oxleas NHS Foundation Trust": {
+    "values": [
+      "Kind",
+      "Fair",
+      "Listen",
+      "Care"
+    ],
+    "description": "Values: Kind, Fair, Listen"
+  },
+  "Pennine Care NHS Foundation Trust": {
+    "values": [
+      "Kindness",
+      "Fairness",
+      "Ingenuity",
+      "Determination"
+    ],
+    "description": "Values: Kindness, Fairness, Ingenuity"
+  },
+  "Portsmouth Hospitals University NHS Trust": {
+    "values": [
+      "Working together",
+      "Improving together"
+    ],
+    "description": "Values: Working together, Improving together"
+  },
+  "Queen Victoria Hospital NHS Foundation Trust": {
+    "values": [
+      "Caring and inclusive",
+      "Supportive and challenging",
+      "Listen to improve",
+      "Succeed together"
+    ],
+    "description": "Values: Caring and inclusive, Supportive and challenging, Listen to improve"
+  },
+  "Rotherham Doncaster and South Humber NHS Foundation Trust": {
+    "values": [
+      "Passionate",
+      "Reliable",
+      "Caring and safe",
+      "Supportive",
+      "Open",
+      "Progressive"
+    ],
+    "description": "Values: Passionate, Reliable, Caring and safe"
+  },
+  "Royal Berkshire NHS Foundation Trust": {
+    "values": [
+      "Compassionate",
+      "Aspirational",
+      "Resourceful",
+      "Excellent"
+    ],
+    "description": "Values: Compassionate, Aspirational, Resourceful"
+  },
+  "Royal Brompton and Harefield NHS Foundation Trust": {
+    "values": [
+      "Caring",
+      "Ambitious",
+      "Inclusive"
+    ],
+    "description": "Values: Caring, Ambitious, Inclusive"
+  },
+  "Royal Cornwall Hospitals NHS Trust": {
+    "values": [
+      "Respect",
+      "Compassion",
+      "Honesty",
+      "Teamwork"
+    ],
+    "description": "Values: Respect, Compassion, Honesty"
+  },
+  "Royal Devon University Healthcare NHS Foundation Trust": {
+    "values": [
+      "Compassion",
+      "Integrity",
+      "Inclusion",
+      "Empowerment"
+    ],
+    "description": "Values: Compassion, Integrity, Inclusion"
+  },
+  "Royal Free London NHS Foundation Trust": {
+    "values": [
+      "Welcoming",
+      "Respectful",
+      "Reassuring",
+      "Communicative"
+    ],
+    "description": "Values: Welcoming, Respectful, Reassuring"
+  },
+  "Royal National Orthopaedic Hospital NHS Trust": {
+    "values": [
+      "Patients first, always",
+      "Equality for all",
+      "Trust, honesty and respect for each other",
+      "Excellence in all we do"
+    ],
+    "description": "Values: Patients first, always, Equality for all, Trust, honesty and respect for each other"
+  },
+  "Royal Papworth Hospital NHS Foundation Trust": {
+    "values": [
+      "Compassion",
+      "Excellence",
+      "Collaboration"
+    ],
+    "description": "Values: Compassion, Excellence, Collaboration"
+  },
+  "Royal Surrey NHS Foundation Trust": {
+    "values": [
+      "Caring together",
+      "Continuously improving",
+      "Learning together",
+      "Excelling together"
+    ],
+    "description": "Values: Caring together, Continuously improving, Learning together"
+  },
+  "Royal United Hospitals Bath NHS Foundation Trust": {
+    "values": [
+      "Everyone Matters",
+      "Working Together",
+      "Making a Difference"
+    ],
+    "description": "Values: Everyone Matters, Working Together, Making a Difference"
+  },
+  "Salisbury NHS Foundation Trust": {
+    "values": [
+      "Person Centred and Safe",
+      "Professional",
+      "Responsive",
+      "Friendly",
+      "Progressive"
+    ],
+    "description": "Values: Person Centred and Safe, Professional, Responsive"
+  },
+  "Sandwell and West Birmingham Hospitals NHS Trust": {
+    "values": [
+      "Ambition",
+      "Respect",
+      "Compassion"
+    ],
+    "description": "Values: Ambition, Respect, Compassion"
+  },
+  "Sheffield Children's NHS Foundation Trust": {
+    "values": [
+      "Compassion",
+      "Accountability",
+      "Respect",
+      "Excellence (CARE)"
+    ],
+    "description": "Values: Compassion, Accountability, Respect"
+  },
+  "Sheffield Teaching Hospitals NHS Foundation Trust": {
+    "values": [
+      "Patient first",
+      "Respectful",
+      "Ownership",
+      "Unity",
+      "Deliver"
+    ],
+    "description": "Values: Patient first, Respectful, Ownership"
+  },
+  "Sherwood Forest Hospitals NHS Foundation Trust": {
+    "values": [
+      "Communicating and working together",
+      "Aspiring and improving",
+      "Respectful, inclusive and caring",
+      "Efficient and safe (CARE)"
+    ],
+    "description": "Values: Communicating and working together, Aspiring and improving, Respectful, inclusive and caring"
+  },
+  "Shrewsbury and Telford Hospital NHS Trust": {
+    "values": [
+      "Partnering",
+      "Ambitious",
+      "Caring",
+      "Trusted (PACT)"
+    ],
+    "description": "Values: Partnering, Ambitious, Caring"
+  },
+  "Shropshire Community Health NHS Trust": {
+    "values": [
+      "Improving Lives",
+      "Everyone Counts",
+      "Commitment to Quality",
+      "Working Together for Patients",
+      "Compassionate Care",
+      "Respect and Dignity"
+    ],
+    "description": "Values: Improving Lives, Everyone Counts, Commitment to Quality"
+  },
+  "Solent NHS Trust": {
+    "values": [
+      "Honesty",
+      "Everyone Counts",
+      "Accountability",
+      "Respect",
+      "Teamwork"
+    ],
+    "description": "Values: Honesty, Everyone Counts, Accountability"
+  },
+  "South Central Ambulance Service NHS Foundation Trust": {
+    "values": [
+      "Caring",
+      "Innovation",
+      "Professionalism",
+      "Teamwork"
+    ],
+    "description": "Values: Caring, Innovation, Professionalism"
+  },
+  "South East Coast Ambulance Service NHS Foundation Trust": {
+    "values": [
+      "Integrity",
+      "Kindness",
+      "Courage"
+    ],
+    "description": "Values: Integrity, Kindness, Courage"
+  },
+  "South London and Maudsley NHS Foundation Trust": {
+    "values": [
+      "Kindness",
+      "Respect",
+      "Together"
+    ],
+    "description": "Values: Kindness, Respect, Together"
+  },
+  "South Tees Hospitals NHS Foundation Trust": {
+    "values": [
+      "Respect",
+      "Support",
+      "Collaborate"
+    ],
+    "description": "Values: Respect, Support, Collaborate"
+  },
+  "South Tyneside and Sunderland NHS Foundation Trust": {
+    "values": [
+      "Compassion",
+      "Teamwork",
+      "Honesty",
+      "Respect"
+    ],
+    "description": "Values: Compassion, Teamwork, Honesty"
+  },
+  "South Warwickshire NHS Foundation Trust": {
+    "values": [
+      "Inclusive",
+      "Safe",
+      "Effective",
+      "Compassionate care"
+    ],
+    "description": "Values: Inclusive, Safe, Effective"
+  },
+  "South West London and St George's Mental Health NHS Trust": {
+    "values": [
+      "Respectful",
+      "Open",
+      "Compassionate",
+      "Collaborative",
+      "Consistent"
+    ],
+    "description": "Values: Respectful, Open, Compassionate"
+  },
+  "South West Yorkshire Partnership NHS Foundation Trust": {
+    "values": [
+      "We put the person first and in the centre",
+      "We know that families and carers matter",
+      "We are respectful, honest, open and transparent",
+      "We improve and aim to be outstanding",
+      "We are relevant today and ready for tomorrow"
+    ],
+    "description": "Values: We put the person first and in the centre, We know that families and carers matter, We are respectful, honest, open and transparent"
+  },
+  "South Western Ambulance Service NHS Foundation Trust": {
+    "values": [
+      "One team",
+      "Compassionate",
+      "Innovative"
+    ],
+    "description": "Values: One team, Compassionate, Innovative"
+  },
+  "Southport and Ormskirk Hospital NHS Trust": {
+    "values": [
+      "Supportive",
+      "Caring",
+      "Open and honest",
+      "Professional",
+      "Efficient"
+    ],
+    "description": "Values: Supportive, Caring, Open and honest"
+  },
+  "St George's University Hospitals NHS Foundation Trust": {
+    "values": [
+      "Excellent",
+      "Kind",
+      "Responsible",
+      "Respectful"
+    ],
+    "description": "Values: Excellent, Kind, Responsible"
+  },
+  "St Helens and Knowsley Teaching Hospitals NHS Trust": {
+    "values": [
+      "Kind",
+      "Open",
+      "Inclusive"
+    ],
+    "description": "Values: Kind, Open, Inclusive"
+  },
+  "States of Guernsey HSE": {
+    "values": [
+      "Caring",
+      "Compassionate",
+      "Empowered",
+      "Educated",
+      "Accountable."
+    ],
+    "description": "Values: Caring, Compassionate, Empowered"
+  },
+  "Stockport NHS Foundation Trust": {
+    "values": [
+      "Compassion",
+      "Accountability",
+      "Respect",
+      "Excellence"
+    ],
+    "description": "Values: Compassion, Accountability, Respect"
+  },
+  "Surrey and Borders Partnership NHS Foundation Trust": {
+    "values": [
+      "Treat people well",
+      "Involve not ignore",
+      "Create respectful places",
+      "Be open, honest and accountable"
+    ],
+    "description": "Values: Treat people well, Involve not ignore, Create respectful places"
+  },
+  "Sussex Community NHS Foundation Trust": {
+    "values": [
+      "Compassionate care",
+      "Working together",
+      "Achieving ambitions",
+      "Delivering excellence"
+    ],
+    "description": "Values: Compassionate care, Working together, Achieving ambitions"
+  },
+  "Sussex Partnership NHS Foundation Trust": {
+    "values": [
+      "Compassionate",
+      "Accountable",
+      "Optimistic"
+    ],
+    "description": "Values: Compassionate, Accountable, Optimistic"
+  },
+  "Tameside and Glossop Integrated Care NHS Foundation Trust": {
+    "values": [
+      "Compassion",
+      "Accountability",
+      "Respect",
+      "Excellence"
+    ],
+    "description": "Values: Compassion, Accountability, Respect"
+  },
+  "Tavistock and Portman NHS Foundation Trust": {
+    "values": [
+      "Excellence",
+      "Inclusivity",
+      "Compassion",
+      "Respect"
+    ],
+    "description": "Values: Excellence, Inclusivity, Compassion"
+  },
+  "Tees, Esk and Wear Valleys NHS Foundation Trust": {
+    "values": [
+      "Respect (Inclusive",
+      "Considerate",
+      "Open and honest)",
+      "Compassion (Kind",
+      "Fair",
+      "Listening and acting)",
+      "Responsibility (Accountable",
+      "Reliable and productive",
+      "Challenging and improving)"
+    ],
+    "description": "Values: Respect (Inclusive, Considerate, Open and honest)"
+  },
+  "The Christie NHS Foundation Trust": {
+    "values": [
+      "Make a Difference",
+      "Act with Kindness",
+      "Connect with People"
+    ],
+    "description": "Values: Make a Difference, Act with Kindness, Connect with People"
+  },
+  "The Clatterbridge Cancer Centre NHS Foundation Trust": {
+    "values": [
+      "Kind",
+      "Empowered",
+      "Responsible",
+      "Inclusive"
+    ],
+    "description": "Values: Kind, Empowered, Responsible"
+  },
+  "The Dudley Group NHS Foundation Trust": {
+    "values": [
+      "Care",
+      "Respect",
+      "Responsibility"
+    ],
+    "description": "Values: Care, Respect, Responsibility"
+  },
+  "The Hillingdon Hospitals NHS Foundation Trust": {
+    "values": [
+      "Communication",
+      "Attitude",
+      "Responsibility",
+      "Equity",
+      "Safety (CARES)"
+    ],
+    "description": "Values: Communication, Attitude, Responsibility"
+  },
+  "The Newcastle Upon Tyne Hospitals NHS Foundation Trust": {
+    "values": [
+      "We care and are kind",
+      "We have high standards",
+      "We are inclusive",
+      "We are innovative",
+      "We are proud"
+    ],
+    "description": "Values: We care and are kind, We have high standards, We are inclusive"
+  },
+  "The Princess Alexandra Hospital NHS Trust": {
+    "values": [
+      "Patient at heart",
+      "Everyday excellence",
+      "Creative collaboration"
+    ],
+    "description": "Values: Patient at heart, Everyday excellence, Creative collaboration"
+  },
+  "The Queen Elizabeth Hospital, King's Lynn, NHS Foundation Trust": {
+    "values": [
+      "Kindness",
+      "Wellness",
+      "Fairness"
+    ],
+    "description": "Values: Kindness, Wellness, Fairness"
+  },
+  "The Robert Jones and Agnes Hunt Orthopaedic Hospital NHS Foundation Trust": {
+    "values": [
+      "Professional",
+      "Excellence",
+      "Respect",
+      "Friendly",
+      "Inclusive",
+      "Caring"
+    ],
+    "description": "Values: Professional, Excellence, Respect"
+  },
+  "The Rotherham NHS Foundation Trust": {
+    "values": [
+      "Ambitious",
+      "Caring",
+      "Together (ACT)"
+    ],
+    "description": "Values: Ambitious, Caring, Together (ACT)"
+  },
+  "The Royal Marsden NHS Foundation Trust": {
+    "values": [
+      "Pioneering Change",
+      "Pursuing Excellence",
+      "Working Collaboratively",
+      "Showing Kindness"
+    ],
+    "description": "Values: Pioneering Change, Pursuing Excellence, Working Collaboratively"
+  },
+  "The Royal Orthopaedic Hospital NHS Foundation Trust": {
+    "values": [
+      "Compassion",
+      "Openness",
+      "Pride",
+      "Innovation",
+      "Excellence",
+      "Respect"
+    ],
+    "description": "Values: Compassion, Openness, Pride"
+  },
+  "The Royal Wolverhampton NHS Trust": {
+    "values": [
+      "Safe and effective",
+      "Kind and caring",
+      "Exceeding expectation"
+    ],
+    "description": "Values: Safe and effective, Kind and caring, Exceeding expectation"
+  },
+  "The Walton Centre NHS Foundation Trust": {
+    "values": [
+      "Compassion",
+      "Innovation",
+      "Excellence"
+    ],
+    "description": "Values: Compassion, Innovation, Excellence"
+  },
+  "Torbay and South Devon NHS Foundation Trust": {
+    "values": [
+      "Working together for patients",
+      "Respect and dignity",
+      "Commitment to quality of care",
+      "Compassion",
+      "Improving lives",
+      "Everyone counts",
+      "Accountability"
+    ],
+    "description": "Values: Working together for patients, Respect and dignity, Commitment to quality of care"
+  },
+  "United Lincolnshire Hospitals NHS Trust": {
+    "values": [
+      "Compassionate",
+      "Collaborative",
+      "Innovative"
+    ],
+    "description": "Values: Compassionate, Collaborative, Innovative"
+  },
+  "University College London Hospitals NHS Foundation Trust": {
+    "values": [
+      "Safety",
+      "Kindness",
+      "Teamwork",
+      "Improving"
+    ],
+    "description": "Values: Safety, Kindness, Teamwork"
+  },
+  "University Hospital Southampton NHS Foundation Trust": {
+    "values": [
+      "Patients first",
+      "Working together",
+      "Always improving"
+    ],
+    "description": "Values: Patients first, Working together, Always improving"
   },
   "University Hospitals Birmingham NHS Foundation Trust": {
-    "values": ["Compassion", "Respect", "Excellence", "Safety"],
-    "description": "Delivering safe and caring services."
+    "values": [
+      "Kind",
+      "Connected",
+      "Bold"
+    ],
+    "description": "Values: Kind, Connected, Bold"
+  },
+  "University Hospitals Bristol and Weston NHS Foundation Trust": {
+    "values": [
+      "Respectful",
+      "Collaborative",
+      "Innovative",
+      "Supportive"
+    ],
+    "description": "Values: Respectful, Collaborative, Innovative"
+  },
+  "University Hospitals Coventry and Warwickshire NHS Trust": {
+    "values": [
+      "Compassion",
+      "Openness",
+      "Pride",
+      "Learn",
+      "Partnership",
+      "Improve",
+      "Respect"
+    ],
+    "description": "Values: Compassion, Openness, Pride"
+  },
+  "University Hospitals Dorset NHS Foundation Trust": {
+    "values": [
+      "Kind",
+      "Caring",
+      "Compassionate",
+      "Collaborative",
+      "Supportive",
+      "Encouraging",
+      "Clear communication",
+      "Active listening",
+      "Respectful",
+      "Honest",
+      "Learning",
+      "Open‑minded",
+      "Inclusive",
+      "Fair"
+    ],
+    "description": "Values: Kind, Caring, Compassionate"
+  },
+  "University Hospitals Plymouth NHS Trust": {
+    "values": [
+      "Put people first",
+      "Take ownership",
+      "Respect others",
+      "Be positive",
+      "Listen, learn and improve"
+    ],
+    "description": "Values: Put people first, Take ownership, Respect others"
+  },
+  "University Hospitals Sussex NHS Foundation Trust": {
+    "values": [
+      "Compassionate",
+      "Respectful",
+      "Inclusive",
+      "Professional",
+      "Dynamic"
+    ],
+    "description": "Values: Compassionate, Respectful, Inclusive"
+  },
+  "University Hospitals of Derby and Burton NHS Foundation Trust": {
+    "values": [
+      "Compassion",
+      "Openness",
+      "Respect",
+      "Excellence"
+    ],
+    "description": "Values: Compassion, Openness, Respect"
+  },
+  "University Hospitals of Leicester NHS Trust": {
+    "values": [
+      "Compassion",
+      "Respect",
+      "Integrity",
+      "Pride",
+      "Engagement"
+    ],
+    "description": "Values: Compassion, Respect, Integrity"
+  },
+  "University Hospitals of Morecambe Bay NHS Foundation Trust": {
+    "values": [
+      "Patients",
+      "People",
+      "Progress"
+    ],
+    "description": "Values: Patients, People, Progress"
+  },
+  "University Hospitals of North Midlands NHS Trust": {
+    "values": [
+      "Safe",
+      "Compassionate",
+      "Together"
+    ],
+    "description": "Values: Safe, Compassionate, Together"
+  },
+  "Velindre Cancer Centre": {
+    "values": [
+      "Caring",
+      "Kind",
+      "Trust",
+      "Respect"
+    ],
+    "description": "Values: Caring, Kind, Trust"
+  },
+  "Walsall Healthcare NHS Trust": {
+    "values": [
+      "Compassion",
+      "Respect",
+      "Professionalism"
+    ],
+    "description": "Values: Compassion, Respect, Professionalism"
+  },
+  "Warrington and Halton Teaching Hospitals NHS Foundation Trust": {
+    "values": [
+      "We are caring",
+      "We are respectful",
+      "We are inclusive",
+      "We are committed to excellence"
+    ],
+    "description": "Values: We are caring, We are respectful, We are inclusive"
+  },
+  "West Hertfordshire Hospitals NHS Trust": {
+    "values": [
+      "Empowered",
+      "Compassionate",
+      "Professional",
+      "Inclusive"
+    ],
+    "description": "Values: Empowered, Compassionate, Professional"
+  },
+  "West London NHS Trust": {
+    "values": [
+      "Togetherness",
+      "Responsibility",
+      "Excellence",
+      "Caring"
+    ],
+    "description": "Values: Togetherness, Responsibility, Excellence"
+  },
+  "West Midlands Ambulance Service NHS Foundation Trust": {
+    "values": [
+      "Excellence",
+      "Integrity",
+      "Compassion",
+      "Inclusivity",
+      "Accountability"
+    ],
+    "description": "Values: Excellence, Integrity, Compassion"
+  },
+  "West Suffolk NHS Foundation Trust": {
+    "values": [
+      "Fairness: Inclusivity",
+      "Respect",
+      "Safety",
+      "Teamwork"
+    ],
+    "description": "Values: Fairness: Inclusivity, Respect, Safety"
+  },
+  "Whittington Health NHS Trust": {
+    "values": [
+      "Innovation",
+      "Compassion",
+      "Accountability",
+      "Respect",
+      "Excellence"
+    ],
+    "description": "Values: Innovation, Compassion, Accountability"
+  },
+  "Wirral University Teaching Hospital NHS Foundation Trust": {
+    "values": [
+      "Compassion",
+      "Respect",
+      "Innovation",
+      "Partnership"
+    ],
+    "description": "Values: Compassion, Respect, Innovation"
+  },
+  "Worcestershire Acute Hospitals NHS Trust": {
+    "values": [
+      "Being open and honest",
+      "Ensuring people feel cared for",
+      "Showing respect for everyone"
+    ],
+    "description": "Values: Being open and honest, Ensuring people feel cared for, Showing respect for everyone"
+  },
+  "Wrightington, Wigan and Leigh NHS Foundation Trust": {
+    "values": [
+      "People at heart",
+      "Listen and Involve",
+      "Kind and Respectful",
+      "One Team"
+    ],
+    "description": "Values: People at heart, Listen and Involve, Kind and Respectful"
+  },
+  "Wye Valley NHS Trust": {
+    "values": [
+      "Compassion",
+      "Accountability",
+      "Respect",
+      "Excellence"
+    ],
+    "description": "Values: Compassion, Accountability, Respect"
+  },
+  "York and Scarborough Teaching Hospitals NHS Foundation Trust": {
+    "values": [
+      "Kindness",
+      "Openness",
+      "Excellence"
+    ],
+    "description": "Values: Kindness, Openness, Excellence"
+  },
+  "Yorkshire Ambulance Service NHS Trust": {
+    "values": [
+      "Kindness",
+      "Respect",
+      "Teamwork",
+      "Improvement"
+    ],
+    "description": "Values: Kindness, Respect, Teamwork"
   }
 }
