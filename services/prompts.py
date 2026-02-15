@@ -14,6 +14,8 @@ Your task is to generate a Supporting Statement that:
 - Sounds human, professional, and natural — not robotic or AI-generated
 - Avoids em dashes (use commas or periods instead)
 - Have high ATS word match for NHS job applications (use trust-specific language where possible)
+- Uses VARIED sentence structures and vocabulary to ensure each statement is unique
+- Avoids repetitive phrasing patterns — each statement should feel distinctly written
 
 Avoid generic phrases such as:
 - "I am passionate about…"
@@ -146,6 +148,8 @@ The statement must:
 - Be written in first person ("I")
 - Sound human, professional, and natural — not robotic or AI-generated
 - Avoid em dashes (use commas or periods instead)
+- Use VARIED sentence structures and vocabulary to ensure each statement is unique
+- Avoid repetitive phrasing patterns — each statement should feel distinctly written
 
 Avoid generic phrases such as:
 - "I am passionate about…"

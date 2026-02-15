@@ -136,6 +136,7 @@ async def generate_supporting_info(
     message = client.messages.create(
         model=CLAUDE_MODEL,
         max_tokens=4000,
+        temperature=0.8,
         system=system_prompt,
         messages=[
             {
