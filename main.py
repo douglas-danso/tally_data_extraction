@@ -25,7 +25,8 @@ app.add_middleware(
     allow_origins=[
         FRONTEND_URL,
         "http://localhost:3000",  # Development
-        "http://localhost:3001",  # Alternative dev port
+        "http://localhost:3001",
+        "https://nhs-payment-frontend.vercel.app/"  # Alternative dev port
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -55,7 +56,8 @@ app.include_router(admin.router)
 
 @app.get("/health")
 async def health():
-    """Health check endpoint."""
+    """Health check and db health endpoint."""
+    # db = 
     return {"status": "ok"}
 
 
