@@ -36,3 +36,34 @@ async def send_email(recipient: str, subject: str, body: str) -> None:
             timeout=30.0,
         )
         response.raise_for_status()
+
+
+async def send_insufficient_credits_email(
+    recipient: str, name: str, checkout_url: str
+) -> None:
+    """Send an email when user has insufficient credits.
+
+    Args:
+        recipient: User's email address
+        name: User's name
+        checkout_url: URL to purchase credits
+    """
+    from config import FRONTEND_URL
+
+    subject = "Purchase Credits to Generate Your NHS Supporting Information"
+    body = f"""Dear {name},
+
+Thank you for using the NHS Supporting Information Generator!
+
+To generate your tailored supporting statement, you'll need to purchase credits first.
+
+**[Purchase Credits Now]({checkout_url})**
+
+Once your payment is complete, simply resubmit your application form and we'll generate your supporting information right away.
+
+If you have any questions, please don't hesitate to reach out.
+
+Best regards,
+The NHS Supporting Information Generator Team"""
+
+    await send_email(recipient, subject, body)
