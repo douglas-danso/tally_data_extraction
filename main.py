@@ -26,7 +26,8 @@ app.add_middleware(
         FRONTEND_URL,
         "http://localhost:3000",  # Development
         "http://localhost:3001",
-        "https://nhs-payment-frontend.vercel.app"  # Alternative dev port
+        "https://nhs-payment-frontend.vercel.app",
+        "https://applysmartuk.uk" # Alternative dev port
     ],
     allow_credentials=True,
     allow_methods=["*"],
