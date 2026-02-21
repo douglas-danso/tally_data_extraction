@@ -110,6 +110,7 @@ async def handle_checkout_completed(db: AsyncSession, session: dict) -> None:
     metadata = session.get("metadata", {})
     user_id = uuid.UUID(metadata["user_id"])
     package_id = uuid.UUID(metadata["package_id"])
+    email = metadata.get("email", "")
 
     logger.info(f"Processing completed checkout {session_id} for user {user_id}")
 
@@ -136,6 +137,19 @@ async def handle_checkout_completed(db: AsyncSession, session: dict) -> None:
     elif package.package_type == "subscription":
         # Subscription activation handled by subscription.created webhook
         logger.info(f"Subscription checkout completed for user {user_id}, waiting for subscription.created event")
+
+    # Send order confirmation email
+    customer_details = session.get("customer_details", {})
+    customer_name = (customer_details.get("name") or "").strip() or "there"
+
+    try:
+        from services.email_service import send_order_confirmation_email
+
+        await send_order_confirmation_email(email, customer_name)
+        logger.info(f"Sent order confirmation email to {email}")
+    except Exception as e:
+        logger.error(f"Failed to send order confirmation email to {email}: {e}")
+
 
 
 async def handle_subscription_created(db: AsyncSession, subscription: dict) -> None:
